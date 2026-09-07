@@ -363,55 +363,121 @@ blockquote cite {
   color: var(--ink-soft);
 }
 
-/* ---------- Ask / signup ---------- */
-.ask {
+/* ---------- Quote request ---------- */
+.quote {
   padding: 80px 0 96px;
   background: var(--ink);
   color: var(--paper);
 }
 
-.ask-inner { text-align: left; }
+.quote-inner { text-align: left; }
 
-.ask h2 { color: var(--paper); }
-.ask .section-sub { color: #C7CFDD; }
+.quote h2 { color: var(--paper); }
+.quote .section-sub { color: #C7CFDD; max-width: 60ch; }
 
-.ask-form {
+.quote-form {
+  margin-top: 32px;
+  max-width: 560px;
   display: flex;
-  gap: 12px;
-  margin-top: 24px;
-  max-width: 480px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.ask-form input[type="email"] {
-  flex: 1 1 240px;
-  padding: 13px 16px;
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row-split {
+  flex-direction: row;
+  gap: 16px;
+}
+
+.form-row-split > div {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.quote-form label,
+.fieldset-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #DCE2EC;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form select,
+.quote-form textarea {
+  padding: 12px 14px;
   border-radius: var(--radius);
   border: 2px solid transparent;
   font-family: var(--font-body);
   font-size: 0.98rem;
+  background: #fff;
+  color: var(--ink);
 }
 
-.ask-form input[type="email"]:focus-visible {
+.quote-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.quote-form input:focus-visible,
+.quote-form select:focus-visible,
+.quote-form textarea:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 1px;
 }
 
-.ask-form .btn-primary {
-  background: var(--gold);
-  color: var(--ink);
+.contact-choice {
+  display: flex;
+  gap: 12px;
 }
 
-.ask-form .btn-primary:hover {
+.radio-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2E3E5C;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+
+.radio-pill input {
+  accent-color: var(--gold);
+}
+
+.quote-form .btn-primary {
+  background: var(--gold);
+  color: var(--ink);
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+.quote-form .btn-primary:hover {
   background: var(--gold-dark);
   color: var(--paper);
 }
 
-.ask-response {
-  margin-top: 16px;
+.quote-response {
+  margin-top: 18px;
   font-size: 0.95rem;
   color: var(--gold);
   min-height: 1.4em;
+  max-width: 560px;
+}
+
+@media (max-width: 520px) {
+  .form-row-split {
+    flex-direction: column;
+  }
 }
 
 /* ---------- Footer ---------- */

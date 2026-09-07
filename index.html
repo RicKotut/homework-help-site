@@ -22,7 +22,7 @@
       <a href="#subjects">Subjects</a>
       <a href="#how">How it works</a>
       <a href="#stories">Stories</a>
-      <a class="nav-cta" href="#ask">Ask a question</a>
+      <a class="nav-cta" href="#quote">Get a quote</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -38,10 +38,10 @@
       <h1>Stuck on a problem?<br>Let's work through it<br>together.</h1>
       <p class="hero-sub">Study Hall pairs you with a real helper who talks you through the reasoning — not a page that just gives you the final number.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#ask">Ask your first question</a>
+        <a class="btn btn-primary" href="#quote">Get a free quote</a>
         <a class="btn btn-ghost" href="#subjects">Browse subjects</a>
       </div>
-      <p class="hero-note">No account needed to look around. Free for students, always.</p>
+      <p class="hero-note">Tell us what you're working on — get a price back by email or WhatsApp, usually within the hour.</p>
     </div>
 
     <div class="hero-panel" aria-hidden="true">
@@ -137,16 +137,79 @@
     </div>
   </section>
 
-  <section class="ask" id="ask">
-    <div class="wrap ask-inner">
-      <h2>Ready to stop guessing?</h2>
-      <p class="section-sub">Leave your email and we'll send you a link to ask your first question.</p>
-      <form id="ask-form" class="ask-form" novalidate>
-        <label class="sr-only" for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="you@school.edu" required>
-        <button type="submit" class="btn btn-primary">Get started</button>
+  <section class="quote" id="quote">
+    <div class="wrap quote-inner">
+      <h2>Get a free quote</h2>
+      <p class="section-sub">Tell us what you're working on and how you'd like to be contacted. We'll reply with a price and the next step.</p>
+
+      <form id="quote-form" class="quote-form" novalidate>
+        <div class="form-row">
+          <label for="q-name">Your name</label>
+          <input type="text" id="q-name" name="name" placeholder="Jane Doe" required>
+        </div>
+
+        <div class="form-row form-row-split">
+          <div>
+            <label for="q-subject">Subject</label>
+            <select id="q-subject" name="subject" required>
+              <option value="" disabled selected>Choose a subject</option>
+              <option>Math</option>
+              <option>Science</option>
+              <option>English</option>
+              <option>History</option>
+              <option>Coding</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="q-type">What kind of help?</label>
+            <select id="q-type" name="help_type" required>
+              <option value="" disabled selected>Choose one</option>
+              <option>Explain a concept</option>
+              <option>Work through practice problems together</option>
+              <option>Exam prep / study session</option>
+              <option>Review my draft or homework</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="q-urgency">When do you need this?</label>
+          <select id="q-urgency" name="urgency" required>
+            <option value="" disabled selected>Choose one</option>
+            <option>Today</option>
+            <option>This week</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="q-details">Details</label>
+          <textarea id="q-details" name="details" rows="4" placeholder="What topic or questions do you want to go over? For exam prep, list the topics you want to review, not the exam questions themselves." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <span class="fieldset-label">How should we send your quote?</span>
+          <div class="contact-choice">
+            <label class="radio-pill">
+              <input type="radio" name="contact_method" value="email" checked>
+              Email
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="contact_method" value="whatsapp">
+              WhatsApp
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="q-contact" id="q-contact-label">Your email address</label>
+          <input type="text" id="q-contact" name="contact_value" placeholder="you@school.edu" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send request</button>
       </form>
-      <p id="ask-response" class="ask-response" role="status" aria-live="polite"></p>
+      <p id="quote-response" class="quote-response" role="status" aria-live="polite"></p>
     </div>
   </section>
 
@@ -158,7 +221,7 @@
     <p class="footer-links">
       <a href="#subjects">Subjects</a>
       <a href="#how">How it works</a>
-      <a href="#ask">Get started</a>
+      <a href="#quote">Get a quote</a>
     </p>
   </div>
 </footer>
