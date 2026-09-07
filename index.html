@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Hall — Homework help that actually explains it</title>
+<meta name="description" content="Get matched with a helper who walks through the problem with you, instead of just handing you the answer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">✎</span>
+      Study Hall
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#subjects">Subjects</a>
+      <a href="#how">How it works</a>
+      <a href="#stories">Stories</a>
+      <a class="nav-cta" href="#ask">Ask a question</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="kicker">Free, one-on-one, right in your browser</p>
+      <h1>Stuck on a problem?<br>Let's work through it<br>together.</h1>
+      <p class="hero-sub">Study Hall pairs you with a real helper who talks you through the reasoning — not a page that just gives you the final number.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#ask">Ask your first question</a>
+        <a class="btn btn-ghost" href="#subjects">Browse subjects</a>
+      </div>
+      <p class="hero-note">No account needed to look around. Free for students, always.</p>
+    </div>
+
+    <div class="hero-panel" aria-hidden="true">
+      <div class="notebook">
+        <p class="notebook-label">Q: Why does 1/2 + 1/3 = 5/6?</p>
+        <p class="notebook-line">Find a common denominator first —<br>6 works for both 2 and 3.</p>
+        <p class="notebook-line">1/2 → 3/6&nbsp;&nbsp;&nbsp;&nbsp;1/3 → 2/6</p>
+        <p class="notebook-line notebook-answer">3/6 + 2/6 = <strong>5/6</strong></p>
+        <p class="notebook-tag">— explained step by step</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subjects" id="subjects">
+    <div class="wrap">
+      <h2>Pick a subject to start</h2>
+      <p class="section-sub">Every helper explains their thinking, so you leave knowing how to do the next one yourself.</p>
+
+      <div class="tab-row">
+        <article class="tab tab-math">
+          <h3>Math</h3>
+          <p>Algebra, geometry, calculus, and the arithmetic that trips everyone up.</p>
+        </article>
+        <article class="tab tab-science">
+          <h3>Science</h3>
+          <p>Biology, chemistry, and physics — labs, formulas, and the "why" behind them.</p>
+        </article>
+        <article class="tab tab-english">
+          <h3>English</h3>
+          <p>Essay structure, grammar, and getting unstuck on what to write next.</p>
+        </article>
+        <article class="tab tab-history">
+          <h3>History</h3>
+          <p>Timelines, causes and effects, and turning notes into an argument.</p>
+        </article>
+        <article class="tab tab-coding">
+          <h3>Coding</h3>
+          <p>Debugging, assignments, and understanding what your code is actually doing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap how-grid">
+      <div class="how-text">
+        <h2>How it works</h2>
+        <p class="section-sub">Three steps, usually under ten minutes from question to understanding.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Submit your question</h3>
+            <p>Type it out or snap a photo of the problem. Add whatever you've already tried — it helps your helper meet you where you are.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Get matched with a helper</h3>
+            <p>Someone who knows the subject reads your question and starts a live chat with you, usually within a few minutes.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Work through it, don't just copy it</h3>
+            <p>Your helper walks the reasoning with you step by step, so the next similar problem is one you can solve on your own.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="stories" id="stories">
+    <div class="wrap">
+      <h2>From students who got unstuck</h2>
+      <div class="quote-row">
+        <blockquote>
+          <p>"I finally understood why the quadratic formula works, not just how to plug numbers into it."</p>
+          <cite>— 10th grade, Algebra II</cite>
+        </blockquote>
+        <blockquote>
+          <p>"My helper caught the exact line where my loop was breaking. I would've stared at it for another hour."</p>
+          <cite>— College freshman, Intro to Programming</cite>
+        </blockquote>
+        <blockquote>
+          <p>"She helped me rebuild my thesis statement instead of rewriting it for me. Big difference."</p>
+          <cite>— 11th grade, English</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="ask" id="ask">
+    <div class="wrap ask-inner">
+      <h2>Ready to stop guessing?</h2>
+      <p class="section-sub">Leave your email and we'll send you a link to ask your first question.</p>
+      <form id="ask-form" class="ask-form" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@school.edu" required>
+        <button type="submit" class="btn btn-primary">Get started</button>
+      </form>
+      <p id="ask-response" class="ask-response" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall — built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="#subjects">Subjects</a>
+      <a href="#how">How it works</a>
+      <a href="#ask">Get started</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
