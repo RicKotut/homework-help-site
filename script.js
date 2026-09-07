@@ -18,9 +18,10 @@ if (navToggle && mainNav) {
 }
 
 // ---------- Quote request form ----------
-// EDIT THESE TWO LINES with your real contact details:
+// EDIT THESE LINES with your real contact details:
 const OWNER_EMAIL = 'a.jenniferbell@gmail.com';  // where quote requests are emailed
 const OWNER_WHATSAPP_NUMBER = '254780708415';    // country code + number, no + no spaces no dashes
+const WEB3FORMS_ACCESS_KEY = '0a92482f-0752-4242-aea6-30002ef63cb7'; // from web3forms.com — sends the email reliably from any device/browser
 
 const quoteForm = document.getElementById('quote-form');
 const quoteResponse = document.getElementById('quote-response');
@@ -96,20 +97,53 @@ if (quoteForm && quoteResponse) {
       `Details: ${details}\n` +
       `Reply to (${method}): ${contactValue}`;
 
+    const submitBtn = quoteForm.querySelector('button[type="submit"]');
+
     if (method === 'whatsapp') {
       // Opens WhatsApp with the message pre-filled, ready for the visitor to hit send.
+      // Works on both the WhatsApp app (mobile) and WhatsApp Web (desktop).
       const waText = encodeURIComponent(messageBody);
       window.open(`https://wa.me/${OWNER_WHATSAPP_NUMBER}?text=${waText}`, '_blank');
       quoteResponse.textContent = 'Opening WhatsApp with your request filled in — just hit send.';
-    } else {
-      // Opens the visitor's email app with the message pre-filled.
-      const subjectLine = encodeURIComponent(`Quote request: ${subject} — ${helpType}`);
-      const emailBody = encodeURIComponent(messageBody);
-      window.location.href = `mailto:${OWNER_EMAIL}?subject=${subjectLine}&body=${emailBody}`;
-      quoteResponse.textContent = 'Opening your email app with your request filled in — just hit send.';
+      quoteForm.reset();
+      updateContactField();
+      return;
     }
 
-    quoteForm.reset();
-    updateContactField();
+    // Email path: submit straight to the inbox via Web3Forms.
+    // This works on every device/browser, unlike mailto: links, which only work
+    // if the visitor has a default desktop email app configured.
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    quoteResponse.textContent = '';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `Quote request: ${subject} — ${helpType}`,
+        from_name: name,
+        email: contactValue,
+        message: messageBody,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          quoteResponse.textContent = "Thanks! Your request is in — we'll email you a quote shortly.";
+          quoteForm.reset();
+          updateContactField();
+        } else {
+          quoteResponse.textContent = `Something went wrong sending your request. You can also email us directly at ${OWNER_EMAIL}.`;
+        }
+      })
+      .catch(() => {
+        quoteResponse.textContent = `Something went wrong sending your request. You can also email us directly at ${OWNER_EMAIL}.`;
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send request';
+      });
   });
 }
