@@ -33,7 +33,18 @@ Every future `git push` to `main` redeploys automatically.
 - `style.css` — all styling
 - `script.js` — mobile menu toggle + the signup form's response message
 
-## Before you go live: edit your contact details
+## Connect your domain (studyhalltutors.com)
+
+1. In the Cloudflare dashboard, go to your Pages project → **Custom domains** → **Set up a domain**.
+2. Enter `studyhalltutors.com` and follow the prompts. Since the domain is already registered on the same Cloudflare account, this is usually one click with no DNS records to add manually.
+3. Repeat for `www.studyhalltutors.com` if you want both to work (Cloudflare will offer to redirect one to the other).
+4. Give it a few minutes for the SSL certificate to issue — then your site is live at your real domain instead of the `.pages.dev` one.
+
+## SEO — one thing left to do
+
+The site now includes meta tags, a favicon, `robots.txt`, `sitemap.xml`, and structured data pointing at `https://studyhalltutors.com/`. The one piece that needs a real file: **`og-image.png`** — this is the image that shows up when someone shares your link on WhatsApp, Facebook, etc. It's referenced in `index.html` but doesn't exist yet. Create a 1200×630px image (a simple banner with your logo/name works fine) and add it as `og-image.png` in the same folder as `index.html`.
+
+
 
 Open `script.js` and change these two lines near the top to your real details:
 
