@@ -19,8 +19,8 @@ if (navToggle && mainNav) {
 
 // ---------- Quote request form ----------
 // EDIT THESE TWO LINES with your real contact details:
-const OWNER_EMAIL = 'you@example.com';           // where quote requests are emailed
-const OWNER_WHATSAPP_NUMBER = '15551234567';     // country code + number, no + no spaces no dashes
+const OWNER_EMAIL = 'a.jenniferbell@gmail.com';  // where quote requests are emailed
+const OWNER_WHATSAPP_NUMBER = '254780708415';    // country code + number, no + no spaces no dashes
 
 const quoteForm = document.getElementById('quote-form');
 const quoteResponse = document.getElementById('quote-response');
@@ -46,8 +46,38 @@ contactRadios.forEach((radio) => radio.addEventListener('change', updateContactF
 if (contactRadios.length) updateContactField();
 
 if (quoteForm && quoteResponse) {
+  const fieldChecks = [
+    { el: () => quoteForm.name, label: 'Your name' },
+    { el: () => quoteForm.subject, label: 'Subject (pick one from the dropdown)' },
+    { el: () => quoteForm.help_type, label: 'What kind of help (pick one from the dropdown)' },
+    { el: () => quoteForm.urgency, label: 'When you need this (pick one from the dropdown)' },
+    { el: () => quoteForm.details, label: 'Details' },
+    { el: () => quoteForm.contact_value, label: 'Your email or WhatsApp number' },
+  ];
+
+  function clearFieldErrors() {
+    quoteForm.querySelectorAll('.field-error').forEach((el) => el.classList.remove('field-error'));
+  }
+
   quoteForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    clearFieldErrors();
+
+    let firstInvalid = null;
+    for (const check of fieldChecks) {
+      const el = check.el();
+      if (!el.value || !el.value.trim()) {
+        el.classList.add('field-error');
+        if (!firstInvalid) firstInvalid = { el, label: check.label };
+      }
+    }
+
+    if (firstInvalid) {
+      quoteResponse.textContent = `Please fill in: ${firstInvalid.label}.`;
+      firstInvalid.el.focus();
+      firstInvalid.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
 
     const name = quoteForm.name.value.trim();
     const subject = quoteForm.subject.value;
@@ -56,11 +86,6 @@ if (quoteForm && quoteResponse) {
     const details = quoteForm.details.value.trim();
     const method = quoteForm.contact_method.value;
     const contactValue = quoteForm.contact_value.value.trim();
-
-    if (!name || !subject || !helpType || !urgency || !details || !contactValue) {
-      quoteResponse.textContent = 'Please fill in every field so we can send an accurate quote.';
-      return;
-    }
 
     const messageBody =
       `New quote request\n\n` +
