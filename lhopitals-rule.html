@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors</title>
+<meta name="description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/lhopitals-rule.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors">
+<meta property="og:description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/lhopitals-rule.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors">
+<meta name="twitter:description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Math & Calculus</p>
+      <p class="kicker">College Math & Calculus</p>
+      <h1>L'Hopital's Rule: When (and When Not) to Use It</h1>
+      <p class="article-meta">Part of the College Calculus Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>L'Hopital's Rule feels like a magic shortcut once you learn it &mdash; which is exactly why it gets misused. It only works on a specific type of limit, and applying it when it doesn't apply is one of the most common point-losing mistakes on a calculus exam.</p>
+
+      <h2>When it actually applies</h2>
+      <p>L'Hopital's Rule only applies to limits that are in an <strong>indeterminate form</strong> &mdash; specifically 0/0 or &infin;/&infin;. If you plug in the limit value and get a real number (even 0 divided by a nonzero number), you don't need L'Hopital's Rule &mdash; you already have your answer.</p>
+
+      <h2>The step-by-step method</h2>
+      <ol>
+        <li><strong>Plug in the limit value first</strong> to confirm you actually get 0/0 or &infin;/&infin;. This step is not optional.</li>
+        <li><strong>Take the derivative of the numerator and denominator separately</strong> &mdash; not the derivative of the whole fraction using the quotient rule.</li>
+        <li><strong>Evaluate the new limit.</strong> If it resolves to a number, you're done.</li>
+        <li><strong>If it's still indeterminate, apply the rule again</strong> on the new fraction, and repeat until it resolves.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>Evaluate the limit as x &rarr; 0 of (sin x) / x</p>
+        <p>Plugging in x = 0 gives 0/0 &mdash; an indeterminate form, so L'Hopital's Rule applies.</p>
+        <p>Differentiate top and bottom separately: derivative of sin x is cos x; derivative of x is 1.</p>
+        <p>New limit: cos(0) / 1 = 1</p>
+        <p>So the original limit equals 1.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Applying it to a limit that isn't actually indeterminate.</strong> If plugging in gives something like 5/0 (not 0/0), the limit is infinite or doesn't exist &mdash; L'Hopital's Rule doesn't apply and using it will give a wrong answer.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Using the quotient rule instead of differentiating top and bottom separately.</strong> L'Hopital's Rule is NOT the quotient rule &mdash; you take the derivative of the numerator and denominator independently, not the derivative of the fraction as a whole.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a calculus problem right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/math.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-calculus-guide.html">The Complete College Calculus Survival Guide</a></li>
+        <li><a href="/blog/how-to-find-a-derivative.html">How to Find a Derivative: A Step-by-Step Method</a></li>
+        <li><a href="/blog/u-substitution-integrals.html">U-Substitution in Integrals: When and How to Use It</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

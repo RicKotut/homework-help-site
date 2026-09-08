@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Find a Derivative: A Step-by-Step Method | Study Hall Tutors</title>
+<meta name="description" content="A clear, step-by-step method for finding derivatives in Calc I: the power rule, product rule, quotient rule, and chain rule, with a worked example.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/how-to-find-a-derivative.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="How to Find a Derivative: A Step-by-Step Method | Study Hall Tutors">
+<meta property="og:description" content="A clear, step-by-step method for finding derivatives in Calc I: the power rule, product rule, quotient rule, and chain rule, with a worked example.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/how-to-find-a-derivative.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Find a Derivative: A Step-by-Step Method | Study Hall Tutors">
+<meta name="twitter:description" content="A clear, step-by-step method for finding derivatives in Calc I: the power rule, product rule, quotient rule, and chain rule, with a worked example.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Math & Calculus</p>
+      <p class="kicker">College Math & Calculus</p>
+      <h1>How to Find a Derivative: A Step-by-Step Method</h1>
+      <p class="article-meta">Part of the College Calculus Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>A derivative measures how fast something is changing &mdash; the slope of a function at a single point. Most of the difficulty in finding one isn't the concept, it's picking the right rule and applying it without mixing steps up. Here's a method that works for almost any function you'll see in Calc I.</p>
+
+      <h2>Step 1: Identify the structure of the function</h2>
+      <p>Before differentiating anything, ask what's happening to the pieces of the function:</p>
+      <ul>
+        <li>Is it one term raised to a power? Use the <strong>power rule</strong>.</li>
+        <li>Is it two functions multiplied together? Use the <strong>product rule</strong>.</li>
+        <li>Is it one function divided by another? Use the <strong>quotient rule</strong>.</li>
+        <li>Is it a function "inside" another function? Use the <strong>chain rule</strong>.</li>
+      </ul>
+      <p>Most mistakes happen when a function actually needs two of these rules together, and a student only applies one.</p>
+
+      <h2>Step 2: Apply the rule carefully, one piece at a time</h2>
+      <p>Rather than trying to differentiate the whole expression in your head, write out each piece explicitly first. If you're using the product rule on f(x)&middot;g(x), write down f(x), g(x), f'(x), and g'(x) separately before combining them.</p>
+
+      <h2>Step 3: Simplify at the end, not during</h2>
+      <p>Resist the urge to simplify halfway through. Get the full, messy derivative down first using the rules, then clean it up algebraically as a separate step. Simplifying too early is one of the most common sources of sign errors.</p>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>Find the derivative of f(x) = (3x&sup2; + 1)&middot;sin(x)</p>
+        <p>This is a product of two functions, so use the product rule: if f(x) = u&middot;v, then f'(x) = u'v + uv'.</p>
+        <p>Let u = 3x&sup2; + 1, so u' = 6x.<br>Let v = sin(x), so v' = cos(x).</p>
+        <p>f'(x) = (6x)(sin x) + (3x&sup2; + 1)(cos x)</p>
+        <p>That's the full derivative &mdash; no further simplification needed unless a specific value of x is given.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Forgetting the chain rule inside another rule.</strong> If a term inside a product or quotient is itself a composite function (like sin(2x) instead of sin(x)), you need the chain rule on that piece too &mdash; it's easy to forget when you're focused on the outer rule.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Mixing up the product and quotient rule formulas.</strong> The quotient rule has a specific order (low d-high minus high d-low, over low squared) &mdash; reversing the subtraction is a very common sign error.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a calculus problem right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/math.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-calculus-guide.html">The Complete College Calculus Survival Guide</a></li>
+        <li><a href="/blog/related-rates-problems.html">Related Rates Problems: A Step-by-Step Method</a></li>
+        <li><a href="/blog/lhopitals-rule.html">L'Hopital's Rule: When (and When Not) to Use It</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

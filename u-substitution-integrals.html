@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U-Substitution in Integrals: When and How to Use It | Study Hall Tutors</title>
+<meta name="description" content="How to recognize when u-substitution applies, a step-by-step method for using it, and the mistakes (like forgetting to change bounds) that trip students up.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/u-substitution-integrals.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="U-Substitution in Integrals: When and How to Use It | Study Hall Tutors">
+<meta property="og:description" content="How to recognize when u-substitution applies, a step-by-step method for using it, and the mistakes (like forgetting to change bounds) that trip students up.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/u-substitution-integrals.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="U-Substitution in Integrals: When and How to Use It | Study Hall Tutors">
+<meta name="twitter:description" content="How to recognize when u-substitution applies, a step-by-step method for using it, and the mistakes (like forgetting to change bounds) that trip students up.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Math & Calculus</p>
+      <p class="kicker">College Math & Calculus</p>
+      <h1>U-Substitution in Integrals: When and How to Use It</h1>
+      <p class="article-meta">Part of the College Calculus Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>U-substitution is the integral version of "undoing" the chain rule. It's usually the first integration technique students learn in Calc II, and it works well once you can recognize the pattern &mdash; which is the part most students struggle with at first.</p>
+
+      <h2>When to use it</h2>
+      <p>Look for an integral where one part of the expression is the derivative of another part (or a constant multiple of it). A common giveaway: a function "inside" another function, multiplied by something that looks like the derivative of the inside piece.</p>
+
+      <h2>The step-by-step method</h2>
+      <ol>
+        <li><strong>Choose u</strong> &mdash; usually the "inside" function (what's inside parentheses, under a root, or in an exponent).</li>
+        <li><strong>Find du</strong> by differentiating u with respect to x, then write du = ... dx.</li>
+        <li><strong>Rewrite the entire integral in terms of u</strong>, replacing every x-term, including dx.</li>
+        <li><strong>Integrate with respect to u</strong> using standard rules.</li>
+        <li><strong>Substitute back</strong> to express the answer in terms of x (unless you already changed the bounds &mdash; see below).</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>Evaluate &int; 2x&middot;cos(x&sup2;) dx</p>
+        <p>Let u = x&sup2;, so du = 2x dx &mdash; which conveniently matches the 2x already in the integral.</p>
+        <p>The integral becomes &int; cos(u) du = sin(u) + C</p>
+        <p>Substituting back: sin(x&sup2;) + C</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Forgetting to substitute dx.</strong> Every part of the original integral needs to be rewritten in terms of u, including dx &mdash; not just the obvious "inside function" piece.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Not changing the bounds on a definite integral.</strong> If you're evaluating from a to b, either convert the bounds to u-values right when you substitute, or make sure to substitute back to x before plugging in the original bounds. Mixing the two approaches is a very common error.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a calculus problem right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/math.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-calculus-guide.html">The Complete College Calculus Survival Guide</a></li>
+        <li><a href="/blog/how-to-find-a-derivative.html">How to Find a Derivative: A Step-by-Step Method</a></li>
+        <li><a href="/blog/lhopitals-rule.html">L'Hopital's Rule: When (and When Not) to Use It</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

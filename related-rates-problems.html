@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Related Rates Problems: A Step-by-Step Method That Works | Study Hall Tutors</title>
+<meta name="description" content="A 5-step method for solving related rates problems in Calc I, with a worked ladder-against-a-wall example and the mistakes that trip students up.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/related-rates-problems.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="Related Rates Problems: A Step-by-Step Method That Works | Study Hall Tutors">
+<meta property="og:description" content="A 5-step method for solving related rates problems in Calc I, with a worked ladder-against-a-wall example and the mistakes that trip students up.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/related-rates-problems.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Related Rates Problems: A Step-by-Step Method That Works | Study Hall Tutors">
+<meta name="twitter:description" content="A 5-step method for solving related rates problems in Calc I, with a worked ladder-against-a-wall example and the mistakes that trip students up.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Math & Calculus</p>
+      <p class="kicker">College Math & Calculus</p>
+      <h1>Related Rates Problems: A Step-by-Step Method</h1>
+      <p class="article-meta">Part of the College Calculus Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Related rates problems feel hard because they're really two problems stacked together: translating a word problem into math, and then differentiating it correctly. Most students can do the differentiation once the equation is set up &mdash; the setup is where things fall apart. Here's a method that separates those two steps cleanly.</p>
+
+      <h2>The 5-step method</h2>
+      <ol>
+        <li><strong>Draw a diagram.</strong> Label every quantity that changes with a variable, and every quantity given a number.</li>
+        <li><strong>Write down what's given and what's asked</strong> as rates (things like dx/dt), not just values.</li>
+        <li><strong>Find an equation relating the variables</strong> &mdash; usually geometry (Pythagorean theorem, area, volume formulas) or a relationship stated in the problem.</li>
+        <li><strong>Differentiate both sides with respect to time</strong>, using the chain rule on every variable that depends on t.</li>
+        <li><strong>Plug in the known values</strong> (only after differentiating, never before) and solve for the unknown rate.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A 10-foot ladder leans against a wall. The bottom slides away from the wall at 2 ft/s. How fast is the top sliding down when the bottom is 6 feet from the wall?</p>
+        <p>Let x = distance from wall to base of ladder, y = height of top of ladder. Since the ladder length is fixed: x&sup2; + y&sup2; = 100.</p>
+        <p>Differentiate both sides with respect to time: 2x(dx/dt) + 2y(dy/dt) = 0</p>
+        <p>When x = 6, y = 8 (from the Pythagorean theorem). We're told dx/dt = 2.</p>
+        <p>2(6)(2) + 2(8)(dy/dt) = 0 &rarr; 24 + 16(dy/dt) = 0 &rarr; dy/dt = &minus;1.5 ft/s</p>
+        <p>The negative sign makes sense: the top of the ladder is sliding <em>down</em>, so its height is decreasing.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Plugging in numbers before differentiating.</strong> If you substitute x = 6 into the equation before taking the derivative, you lose the variable you needed to differentiate. Keep everything as variables until after step 4.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Forgetting the chain rule on each variable.</strong> Since x and y both depend on t, differentiating x&sup2; gives 2x(dx/dt), not just 2x &mdash; it's easy to drop the rate term.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a calculus problem right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/math.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-calculus-guide.html">The Complete College Calculus Survival Guide</a></li>
+        <li><a href="/blog/how-to-find-a-derivative.html">How to Find a Derivative: A Step-by-Step Method</a></li>
+        <li><a href="/blog/study-for-calculus-final.html">How to Study for a Calculus Final in One Week</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
