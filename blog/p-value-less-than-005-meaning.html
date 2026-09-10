@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors</title>
-<meta name="description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<meta name="description" content="A clear explanation of p value interpretation: what statistical significance actually tells you, what it doesn't, and a worked hypothesis testing example.">
 <link rel="canonical" href="https://studyhalltutors.com/blog/p-value-less-than-005-meaning.html">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
@@ -12,13 +12,13 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
 <meta property="og:title" content="What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors">
-<meta property="og:description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<meta property="og:description" content="A clear explanation of p value interpretation: what statistical significance actually tells you, what it doesn't, and a worked hypothesis testing example.">
 <meta property="og:url" content="https://studyhalltutors.com/blog/p-value-less-than-005-meaning.html">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors">
-<meta name="twitter:description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<meta name="twitter:description" content="A clear explanation of p value interpretation: what statistical significance actually tells you, what it doesn't, and a worked hypothesis testing example.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
       <a href="/#how">How it works</a>
       <a href="/#stories">Stories</a>
       <a href="/blog/">Blog</a>
-      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+      <a class="nav-cta" href="/statistics.html#quote">Get a quote</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -49,7 +49,7 @@
 
 <main id="top">
 
-  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
       <p class="kicker">College Statistics</p>
@@ -60,34 +60,39 @@
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>The 0.05 threshold gets used constantly in intro statistics, but the correct interpretation of a p-value is one of the most commonly misunderstood ideas in the entire course &mdash; including, frankly, by plenty of people well past their intro course.</p>
+      <p>"p &lt; 0.05" is one of the most repeated phrases in any intro statistics course, and also one of the most commonly misunderstood. Getting p-value interpretation right matters more than memorizing the cutoff &mdash; here's what it's actually telling you.</p>
 
-      <h2>The setup: null and alternative hypotheses</h2>
-      <p>Every hypothesis test starts with a null hypothesis (usually "no difference" or "no effect") and an alternative hypothesis (there IS a difference or effect). The p-value is calculated assuming the null hypothesis is true.</p>
+      <h2>What a p-value actually measures</h2>
+      <p>A p-value is the probability of seeing a result at least as extreme as what you observed, <em>if the null hypothesis were true</em>. It's a statement about how surprising your data would be under "nothing is going on" &mdash; not a statement about whether something is going on.</p>
 
-      <h2>What a p-value actually is</h2>
-      <p>A p-value is the probability of observing data at least as extreme as what you got, <em>if the null hypothesis were actually true</em>. That's it. It's a statement about how surprising your data would be under the assumption of "no effect" &mdash; not a statement about whether there's actually an effect.</p>
+      <h2>Why 0.05 is the cutoff (and why it's somewhat arbitrary)</h2>
+      <p>A p-value below 0.05 means there's less than a 5% chance of seeing data this extreme if the null hypothesis were actually true &mdash; unlikely enough that most fields have agreed to treat it as evidence against the null hypothesis. But 0.05 isn't a law of nature; it's a widely-adopted convention, which is why some fields use stricter cutoffs.</p>
 
-      <h2>Why 0.05 specifically</h2>
-      <p>0.05 is a convention, not a law of nature. It means: if the null hypothesis is true, there's only a 5% chance of seeing data this extreme by random chance alone. When your p-value is below that threshold, the result is considered "statistically significant" &mdash; unlikely enough under the null hypothesis that you reject it in favor of the alternative.</p>
+      <h2>What a small p-value does NOT mean</h2>
+      <ul>
+        <li><strong>It's not the probability the null hypothesis is true.</strong> This is the single most common misinterpretation in hypothesis testing &mdash; a p-value of 0.03 does not mean there's a 3% chance the null hypothesis is correct.</li>
+        <li><strong>It doesn't measure how big or important the effect is.</strong> A tiny, practically meaningless effect can still produce a very small p-value if the sample size is large enough.</li>
+        <li><strong>p = 0.049 is not meaningfully different from p = 0.051.</strong> Treating 0.05 as a hard line where one side is "real" and the other isn't misses the point of what the number represents.</li>
+      </ul>
 
       <div class="example-box">
         <p class="example-label">Worked example</p>
-        <p>A t-test comparing two teaching methods returns p = 0.03.</p>
-        <p>Correct interpretation: if there were truly no difference between the methods, there'd only be a 3% chance of seeing a difference this large in your sample by chance alone. Since 0.03 &lt; 0.05, you'd reject the null hypothesis and conclude there's a statistically significant difference.</p>
+        <p>A study compares exam scores between students who used a new study app and those who didn't, and finds a p-value of 0.03 for the difference in average scores.</p>
+        <p>Interpretation: if the app truly had no effect, there would only be a 3% chance of seeing a score difference this large just from random variation. Since 0.03 &lt; 0.05, this is typically reported as a statistically significant result.</p>
+        <p>What it doesn't tell you: how large the score improvement actually was, or whether it's large enough to matter practically &mdash; that requires looking at the effect size separately.</p>
       </div>
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
-        <p><strong>"The p-value is the probability the null hypothesis is true."</strong> This is the single most common misinterpretation, and it's wrong. The p-value assumes the null hypothesis is true from the start &mdash; it can't also be telling you the probability of that assumption.</p>
+        <p><strong>Reporting significance without reporting effect size.</strong> A statistically significant result with a tiny practical effect can be misleading if effect size isn't mentioned alongside it.</p>
       </div>
       <div class="mistake-box">
-        <p><strong>Treating "statistically significant" as "important."</strong> A large enough sample size can make even a tiny, practically meaningless difference statistically significant. Always look at the effect size alongside the p-value, not the p-value alone.</p>
+        <p><strong>Treating "not significant" as "no effect."</strong> A p-value above 0.05 means you don't have strong enough evidence to rule out the null hypothesis &mdash; not that you've proven there's no effect at all.</p>
       </div>
 
 
       <div class="cta-box">
-        <h3>Stuck on a stats assignment right now?</h3>
+        <h3>Stuck on a stats problem right now?</h3>
         <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
         <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
       </div>
@@ -97,9 +102,9 @@
       <div class="related-links">
         <h3>Related reading</h3>
         <ul>
-        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
-        <li><a href="/blog/how-to-calculate-confidence-interval.html">How to Calculate a Confidence Interval Step by Step</a></li>
+        <li><a href="/blog/college-statistics-guide.html">The Complete College Statistics Survival Guide</a></li>
         <li><a href="/blog/which-statistical-test-to-use.html">How to Know Which Statistical Test to Use</a></li>
+        <li><a href="/blog/how-to-calculate-confidence-interval.html">How to Calculate a Confidence Interval Step by Step</a></li>
         </ul>
       </div>
 
@@ -114,7 +119,7 @@
     <p class="footer-links">
       <a href="/#subjects">Subjects</a>
       <a href="/blog/">Blog</a>
-      <a href="/math.html#quote">Get a quote</a>
+      <a href="/statistics.html#quote">Get a quote</a>
       <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
     </p>
   </div>

@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>College Statistics Survival Guide — Intro Stats Explained | Study Hall Tutors</title>
-<meta name="description" content="A complete guide to surviving college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel for stats homework.">
+<title>College Statistics Survival Guide — Tests, P-Values & Regression | Study Hall Tutors</title>
+<meta name="description" content="A complete guide to surviving intro college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel — with links to a step-by-step guide on each.">
 <link rel="canonical" href="https://studyhalltutors.com/blog/college-statistics-guide.html">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
-<meta property="og:title" content="College Statistics Survival Guide — Intro Stats Explained | Study Hall Tutors">
-<meta property="og:description" content="A complete guide to surviving college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel for stats homework.">
+<meta property="og:title" content="College Statistics Survival Guide — Tests, P-Values & Regression | Study Hall Tutors">
+<meta property="og:description" content="A complete guide to surviving intro college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel — with links to a step-by-step guide on each.">
 <meta property="og:url" content="https://studyhalltutors.com/blog/college-statistics-guide.html">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="College Statistics Survival Guide — Intro Stats Explained | Study Hall Tutors">
-<meta name="twitter:description" content="A complete guide to surviving college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel for stats homework.">
+<meta name="twitter:title" content="College Statistics Survival Guide — Tests, P-Values & Regression | Study Hall Tutors">
+<meta name="twitter:description" content="A complete guide to surviving intro college statistics: choosing the right test, p-values, confidence intervals, regression, and using Excel — with links to a step-by-step guide on each.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
       <a href="/#how">How it works</a>
       <a href="/#stories">Stories</a>
       <a href="/blog/">Blog</a>
-      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+      <a class="nav-cta" href="/statistics.html#quote">Get a quote</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -49,7 +49,7 @@
 
 <main id="top">
 
-  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
       <p class="kicker">College Statistics</p>
@@ -60,50 +60,52 @@
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>Intro statistics trips people up for a different reason than most math courses: it's less about calculation and more about judgment. Knowing <em>which</em> method to use, and what the output actually means once you have it, matters more than the arithmetic itself &mdash; and that's exactly the part courses often rush through.</p>
+      <p>Intro college statistics is a strange course for a lot of students: it's not exactly math in the way calculus is, but it's not quite verbal reasoning either. You're learning a way of thinking about uncertainty, and that way of thinking doesn't click for everyone on the first pass &mdash; especially when a professor moves from concept to concept faster than you can absorb each one.</p>
 
-      <p>This guide is a map of the topics that cause the most confusion in a first college statistics course, with a step-by-step breakdown of each one.</p>
+      <p>This guide is a map of the topics that trip students up most, with a step-by-step breakdown of each one.</p>
 
-      <h2>Why intro statistics feels different from other math courses</h2>
-      <p>In algebra or calculus, there's usually one right method once you recognize the problem type. In statistics, choosing the right test is itself part of the problem &mdash; and getting that choice wrong means every calculation after it is answering the wrong question. That's why "which test do I use" is often the single most common point of confusion in the whole course.</p>
+      <h2>Why statistics feels different from other math courses</h2>
+      <p>Most math courses build toward a single correct numeric answer. Statistics asks you to make a judgment call under uncertainty &mdash; is this difference real, or could it just be random noise? &mdash; and then defend that judgment using a specific method. The methods themselves aren't usually hard once you know them; the hard part is knowing <em>which</em> method fits <em>which</em> situation, and what the result actually means once you have it.</p>
 
-      <h2>The core skills you need</h2>
+      <h2>The core skills for intro statistics</h2>
       <ul>
-        <li><strong>Choosing the right test</strong> for your data and question &mdash; t-test, ANOVA, chi-square, regression.</li>
-        <li><strong>Understanding what your results actually mean</strong> &mdash; p-values, confidence intervals, and what "significant" does and doesn't imply.</li>
-        <li><strong>Reading output from real tools</strong> &mdash; Excel, SPSS, or R &mdash; and connecting the numbers on the screen back to the concept.</li>
+        <li><strong>Choosing the right test</strong> &mdash; matching your data type and question to a t-test, chi-square, ANOVA, or something else.</li>
+        <li><strong>Interpreting p-values correctly</strong> &mdash; understanding what "statistically significant" actually claims, and what it doesn't.</li>
+        <li><strong>Building and reading confidence intervals</strong> &mdash; expressing uncertainty around an estimate, not just a single number.</li>
+        <li><strong>Interpreting regression output</strong> &mdash; reading coefficients, p-values, and R&sup2; from software output like Excel, SPSS, or R.</li>
+        <li><strong>Actually using the software</strong> &mdash; most intro courses expect you to run these tests in Excel or a stats package, not by hand.</li>
       </ul>
 
       <h2>Where students get stuck, and how to work through it</h2>
       <div class="toc-grid">
         <a class="toc-card" href="/blog/which-statistical-test-to-use.html" style="--accent: var(--indigo)">
-          <h3>Choosing the right test</h3>
-          <p>A decision framework for t-test vs ANOVA vs chi-square vs regression.</p>
+          <h3>Choosing a statistical test</h3>
+          <p>A decision guide for picking between t-test, chi-square, ANOVA, and more.</p>
         </a>
         <a class="toc-card" href="/blog/p-value-less-than-005-meaning.html" style="--accent: var(--indigo)">
           <h3>What a p-value actually means</h3>
-          <p>The correct interpretation, and the misconceptions that lose points on exams.</p>
+          <p>A clear explanation of statistical significance, and what it doesn't claim.</p>
         </a>
         <a class="toc-card" href="/blog/how-to-calculate-confidence-interval.html" style="--accent: var(--indigo)">
           <h3>Calculating a confidence interval</h3>
-          <p>A step-by-step method, worked example included.</p>
+          <p>A step-by-step method, worked through with a real example.</p>
         </a>
         <a class="toc-card" href="/blog/how-to-interpret-regression-results.html" style="--accent: var(--indigo)">
           <h3>Interpreting regression output</h3>
-          <p>Making sense of coefficients, R&sup2;, and p-values from SPSS or R.</p>
+          <p>The four numbers to check first in any regression result.</p>
         </a>
         <a class="toc-card" href="/blog/excel-for-college-statistics.html" style="--accent: var(--indigo)">
           <h3>Using Excel for statistics</h3>
-          <p>A beginner's guide to running the tests your course actually assigns.</p>
+          <p>A beginner's guide to the functions and tools you'll actually use.</p>
         </a>
       </div>
 
       <h2>How to actually study for statistics</h2>
-      <p>The fastest way to lose points in intro stats isn't a calculation error &mdash; it's picking the wrong method or misinterpreting a correct result. When you practice, don't just redo the arithmetic: practice identifying <em>which</em> test a scenario calls for, and practice explaining what your output means in plain language. Both are separate skills from the math itself, and both are directly testable.</p>
+      <p>The biggest trap in stats specifically is memorizing formulas without understanding when to use them. A formula sheet doesn't help if you can't tell which formula the question is asking for. Practice identifying <em>which method applies</em> before you worry about calculating the answer &mdash; that judgment call is what's actually being tested.</p>
 
 
       <div class="cta-box">
-        <h3>Stuck on a stats assignment right now?</h3>
+        <h3>Stuck on a stats problem right now?</h3>
         <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
         <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
       </div>
@@ -119,7 +121,7 @@
     <p class="footer-links">
       <a href="/#subjects">Subjects</a>
       <a href="/blog/">Blog</a>
-      <a href="/math.html#quote">Get a quote</a>
+      <a href="/statistics.html#quote">Get a quote</a>
       <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
     </p>
   </div>
