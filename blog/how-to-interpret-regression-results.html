@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors</title>
+<meta name="description" content="How to interpret regression output from SPSS or R: coefficients, R-squared, and p-values, with a worked example and the mistakes that cost points.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/how-to-interpret-regression-results.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors">
+<meta property="og:description" content="How to interpret regression output from SPSS or R: coefficients, R-squared, and p-values, with a worked example and the mistakes that cost points.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/how-to-interpret-regression-results.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors">
+<meta name="twitter:description" content="How to interpret regression output from SPSS or R: coefficients, R-squared, and p-values, with a worked example and the mistakes that cost points.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
+      <p class="kicker">College Statistics</p>
+      <h1>How to Interpret Regression Results</h1>
+      <p class="article-meta">Part of the College Statistics Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Running a regression is usually the easy part &mdash; software does the calculation for you. The skill your assignment is actually testing is whether you can read the output and explain what it means, which is a different skill entirely from producing it.</p>
+
+      <h2>The key pieces of regression output</h2>
+      <ul>
+        <li><strong>Coefficient (slope):</strong> how much the outcome variable changes for each 1-unit increase in the predictor.</li>
+        <li><strong>Intercept:</strong> the predicted value of the outcome when the predictor equals zero.</li>
+        <li><strong>P-value (for each coefficient):</strong> whether that predictor is statistically significant.</li>
+        <li><strong>R&sup2;:</strong> the proportion of variation in the outcome explained by the model, from 0 to 1.</li>
+      </ul>
+
+      <h2>The step-by-step method for interpreting output</h2>
+      <ol>
+        <li><strong>Check the coefficient's sign and size</strong> &mdash; positive means the outcome increases as the predictor increases; negative means it decreases.</li>
+        <li><strong>Check the p-value for that coefficient</strong> &mdash; below 0.05 typically means the relationship is statistically significant.</li>
+        <li><strong>Check R&sup2;</strong> to see how well the model fits overall &mdash; a significant coefficient doesn't mean the model explains much of the variation.</li>
+        <li><strong>Write the interpretation in plain language</strong>, connecting the number back to the real-world variables in the question.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A regression predicting exam score from hours studied gives: coefficient = 4.2, p = 0.01, R&sup2; = 0.35</p>
+        <p>Interpretation: for each additional hour studied, exam score increases by an estimated 4.2 points on average. This relationship is statistically significant (p = 0.01 &lt; 0.05). Hours studied explains about 35% of the variation in exam scores &mdash; a moderate but not complete fit, meaning other factors matter too.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Treating correlation as causation.</strong> A significant regression coefficient shows an association, not proof that the predictor causes the change in the outcome &mdash; especially in observational (non-experimental) data.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Reporting the coefficient without checking R&sup2;.</strong> A statistically significant predictor can still leave most of the variation unexplained. Both numbers matter for a complete interpretation, not just the p-value.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a stats assignment right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/which-statistical-test-to-use.html">How to Know Which Statistical Test to Use</a></li>
+        <li><a href="/blog/excel-for-college-statistics.html">How to Use Excel for College Statistics</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

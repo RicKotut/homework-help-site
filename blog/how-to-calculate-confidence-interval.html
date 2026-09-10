@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Calculate a Confidence Interval Step by Step | Study Hall Tutors</title>
+<meta name="description" content="A step-by-step method for calculating a confidence interval, with a worked 95 percent confidence interval example and the mistakes that trip students up.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/how-to-calculate-confidence-interval.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="How to Calculate a Confidence Interval Step by Step | Study Hall Tutors">
+<meta property="og:description" content="A step-by-step method for calculating a confidence interval, with a worked 95 percent confidence interval example and the mistakes that trip students up.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/how-to-calculate-confidence-interval.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Calculate a Confidence Interval Step by Step | Study Hall Tutors">
+<meta name="twitter:description" content="A step-by-step method for calculating a confidence interval, with a worked 95 percent confidence interval example and the mistakes that trip students up.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
+      <p class="kicker">College Statistics</p>
+      <h1>How to Calculate a Confidence Interval Step by Step</h1>
+      <p class="article-meta">Part of the College Statistics Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>A confidence interval gives you a range of plausible values for a population parameter, instead of just a single estimate. The calculation itself is fairly mechanical once you know the pieces &mdash; the part that trips people up is picking the right critical value and interpreting the result correctly afterward.</p>
+
+      <h2>The formula</h2>
+      <p>Confidence interval = point estimate &plusmn; margin of error</p>
+      <p>For a sample mean, that's typically: x&#772; &plusmn; (critical value) &times; (standard error)</p>
+
+      <h2>The step-by-step method</h2>
+      <ol>
+        <li><strong>Find your sample mean (x&#772;)</strong> and sample standard deviation (s).</li>
+        <li><strong>Calculate the standard error:</strong> s / &radic;n</li>
+        <li><strong>Find the critical value</strong> for your confidence level &mdash; use a z-value for large samples with known population standard deviation, or a t-value (from the t-distribution, using n&minus;1 degrees of freedom) for smaller samples.</li>
+        <li><strong>Calculate the margin of error:</strong> critical value &times; standard error</li>
+        <li><strong>Construct the interval:</strong> sample mean &plusmn; margin of error</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A sample of 36 students has a mean study time of 8 hours/week, with a standard deviation of 3 hours. Find a 95% confidence interval for the true mean.</p>
+        <p>Standard error = 3 / &radic;36 = 0.5</p>
+        <p>For a 95% confidence level with a large sample, the critical z-value is approximately 1.96.</p>
+        <p>Margin of error = 1.96 &times; 0.5 = 0.98</p>
+        <p>Confidence interval = 8 &plusmn; 0.98 = <strong>(7.02, 8.98)</strong></p>
+        <p>We're 95% confident the true population mean falls between 7.02 and 8.98 hours per week.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Using a z-value when you should use a t-value.</strong> For smaller samples (roughly under 30) or when the population standard deviation is unknown, the t-distribution is more appropriate and gives a wider, more accurate interval.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Misinterpreting what "95% confidence" means.</strong> It does NOT mean "there's a 95% chance the true mean is in this specific interval." The correct interpretation: if you repeated this sampling process many times, about 95% of the resulting intervals would contain the true population mean.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a stats assignment right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/p-value-less-than-005-meaning.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
+        <li><a href="/blog/excel-for-college-statistics.html">How to Use Excel for College Statistics</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

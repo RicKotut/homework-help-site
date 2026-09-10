@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors</title>
+<meta name="description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/p-value-less-than-005-meaning.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors">
+<meta property="og:description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/p-value-less-than-005-meaning.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Does a P-Value Less Than 0.05 Actually Mean? | Study Hall Tutors">
+<meta name="twitter:description" content="A clear explanation of what a p-value under 0.05 actually means, the correct interpretation of statistical significance, and the misconceptions that lose exam points.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
+      <p class="kicker">College Statistics</p>
+      <h1>What Does a P-Value Less Than 0.05 Actually Mean?</h1>
+      <p class="article-meta">Part of the College Statistics Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>The 0.05 threshold gets used constantly in intro statistics, but the correct interpretation of a p-value is one of the most commonly misunderstood ideas in the entire course &mdash; including, frankly, by plenty of people well past their intro course.</p>
+
+      <h2>The setup: null and alternative hypotheses</h2>
+      <p>Every hypothesis test starts with a null hypothesis (usually "no difference" or "no effect") and an alternative hypothesis (there IS a difference or effect). The p-value is calculated assuming the null hypothesis is true.</p>
+
+      <h2>What a p-value actually is</h2>
+      <p>A p-value is the probability of observing data at least as extreme as what you got, <em>if the null hypothesis were actually true</em>. That's it. It's a statement about how surprising your data would be under the assumption of "no effect" &mdash; not a statement about whether there's actually an effect.</p>
+
+      <h2>Why 0.05 specifically</h2>
+      <p>0.05 is a convention, not a law of nature. It means: if the null hypothesis is true, there's only a 5% chance of seeing data this extreme by random chance alone. When your p-value is below that threshold, the result is considered "statistically significant" &mdash; unlikely enough under the null hypothesis that you reject it in favor of the alternative.</p>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A t-test comparing two teaching methods returns p = 0.03.</p>
+        <p>Correct interpretation: if there were truly no difference between the methods, there'd only be a 3% chance of seeing a difference this large in your sample by chance alone. Since 0.03 &lt; 0.05, you'd reject the null hypothesis and conclude there's a statistically significant difference.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>"The p-value is the probability the null hypothesis is true."</strong> This is the single most common misinterpretation, and it's wrong. The p-value assumes the null hypothesis is true from the start &mdash; it can't also be telling you the probability of that assumption.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Treating "statistically significant" as "important."</strong> A large enough sample size can make even a tiny, practically meaningless difference statistically significant. Always look at the effect size alongside the p-value, not the p-value alone.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a stats assignment right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/how-to-calculate-confidence-interval.html">How to Calculate a Confidence Interval Step by Step</a></li>
+        <li><a href="/blog/which-statistical-test-to-use.html">How to Know Which Statistical Test to Use</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

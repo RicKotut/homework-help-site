@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Know Which Statistical Test to Use | Study Hall Tutors</title>
+<meta name="description" content="A decision framework for choosing the right statistical test: t-test vs ANOVA vs chi-square vs regression, based on your data type and question.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/which-statistical-test-to-use.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="How to Know Which Statistical Test to Use | Study Hall Tutors">
+<meta property="og:description" content="A decision framework for choosing the right statistical test: t-test vs ANOVA vs chi-square vs regression, based on your data type and question.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/which-statistical-test-to-use.html">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Know Which Statistical Test to Use | Study Hall Tutors">
+<meta name="twitter:description" content="A decision framework for choosing the right statistical test: t-test vs ANOVA vs chi-square vs regression, based on your data type and question.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/math.html#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
+      <p class="kicker">College Statistics</p>
+      <h1>How to Know Which Statistical Test to Use</h1>
+      <p class="article-meta">Part of the College Statistics Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Choosing the wrong statistical test means every number you calculate afterward is answering a question you weren't actually asked. The good news: the choice usually comes down to answering two or three simple questions about your data, not memorizing a huge table.</p>
+
+      <h2>Start with these questions</h2>
+      <ol>
+        <li><strong>What type of data do you have?</strong> Categorical (groups/labels) or continuous (numbers on a scale)?</li>
+        <li><strong>How many groups are you comparing?</strong> One, two, or three or more?</li>
+        <li><strong>Are the groups independent or paired?</strong> (Different people vs. the same people measured twice.)</li>
+        <li><strong>Are you comparing groups, or looking at a relationship between variables?</strong></li>
+      </ol>
+
+      <h2>A simple decision path</h2>
+      <ul>
+        <li><strong>Comparing the means of 2 independent groups</strong> &mdash; use an independent-samples t-test.</li>
+        <li><strong>Comparing the means of the same group before/after</strong> &mdash; use a paired t-test.</li>
+        <li><strong>Comparing means across 3+ groups</strong> &mdash; use ANOVA, not multiple t-tests.</li>
+        <li><strong>Comparing categorical data across groups</strong> (e.g. pass/fail rates) &mdash; use a chi-square test.</li>
+        <li><strong>Looking at the relationship between two continuous variables</strong> &mdash; use correlation or regression.</li>
+      </ul>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>You want to know if average exam scores differ between 3 different teaching methods.</p>
+        <p>You have one continuous variable (exam score) and one categorical variable with 3 groups (teaching method). That's 3+ groups being compared on a continuous outcome &mdash; use one-way ANOVA, not three separate t-tests.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Running multiple t-tests instead of one ANOVA.</strong> Comparing 3 groups with 3 separate t-tests inflates your chance of a false positive (Type I error) well above 5%. One ANOVA test is the statistically correct choice for 3+ groups.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Treating paired data as independent.</strong> If the same people were measured twice (before/after a treatment, for example), that's paired data &mdash; using an independent-samples test instead of a paired test ignores the connection between the measurements and can give a misleading result.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a stats assignment right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/p-value-less-than-005-meaning.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
+        <li><a href="/blog/how-to-interpret-regression-results.html">How to Interpret Regression Results</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/math.html#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
