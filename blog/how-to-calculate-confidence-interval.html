@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How to Calculate a Confidence Interval Step by Step | Study Hall Tutors</title>
-<meta name="description" content="The confidence interval formula explained step by step, with a worked 95 percent confidence interval example for a college statistics assignment.">
+<meta name="description" content="The formula and a worked example for calculating a 95% confidence interval, plus what the result actually means once you have it.">
 <link rel="canonical" href="https://studyhalltutors.com/blog/how-to-calculate-confidence-interval.html">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
@@ -12,13 +12,13 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
 <meta property="og:title" content="How to Calculate a Confidence Interval Step by Step | Study Hall Tutors">
-<meta property="og:description" content="The confidence interval formula explained step by step, with a worked 95 percent confidence interval example for a college statistics assignment.">
+<meta property="og:description" content="The formula and a worked example for calculating a 95% confidence interval, plus what the result actually means once you have it.">
 <meta property="og:url" content="https://studyhalltutors.com/blog/how-to-calculate-confidence-interval.html">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Calculate a Confidence Interval Step by Step | Study Hall Tutors">
-<meta name="twitter:description" content="The confidence interval formula explained step by step, with a worked 95 percent confidence interval example for a college statistics assignment.">
+<meta name="twitter:description" content="The formula and a worked example for calculating a 95% confidence interval, plus what the result actually means once you have it.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
 
 <main id="top">
 
-  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
       <p class="kicker">College Statistics</p>
@@ -60,41 +60,44 @@
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>A statistics confidence interval gives you a range instead of a single number &mdash; which is usually a more honest way to express an estimate, since a single sample statistic is almost never exactly right. Here's the confidence interval formula broken into steps you can follow for any intro stats problem, the same walkthrough we use for college statistics help sessions.</p>
+      <p>A statistics confidence interval gives you a range of plausible values for a population parameter (like a true average), instead of just a single estimate. Calculating one is mostly plugging numbers into a formula &mdash; the part that trips people up is interpreting what the interval actually means afterward. This is exactly the kind of question we cover in college statistics help sessions.</p>
 
-      <h2>What a confidence interval actually tells you</h2>
-      <p>A 95% confidence interval means: if you repeated this sampling process many times and built an interval each time, about 95% of those intervals would contain the true population value. It's a statement about the reliability of the method, not a 95% probability that this specific interval contains the true value.</p>
+      <h2>The formula</h2>
+      <p>For a sample mean, a confidence interval is: <strong>sample mean &plusmn; (critical value) &times; (standard error)</strong></p>
+      <p>Standard error = sample standard deviation &divide; &radic;(sample size)</p>
+      <p>The critical value depends on your confidence level (1.96 for a 95% confidence interval with a large sample, using the z-distribution) and comes from a z-table or t-table.</p>
 
-      <h2>The step-by-step method</h2>
+      <h2>Step-by-step method</h2>
       <ol>
-        <li><strong>Find your sample mean</strong> (x&#772;) and sample standard deviation (s).</li>
-        <li><strong>Calculate the standard error</strong>: SE = s / &radic;n</li>
-        <li><strong>Find the critical value</strong> for your confidence level. Use a t-value (not z) for most intro-course problems, especially with smaller samples &mdash; look it up using your sample size minus 1 (degrees of freedom) and your confidence level.</li>
-        <li><strong>Calculate the margin of error</strong>: critical value &times; standard error</li>
-        <li><strong>Build the interval</strong>: sample mean &plusmn; margin of error</li>
+        <li><strong>Find your sample mean and standard deviation</strong> from your data.</li>
+        <li><strong>Calculate the standard error</strong>: standard deviation &divide; &radic;(sample size).</li>
+        <li><strong>Find your critical value</strong> for the confidence level you want (1.96 for 95%, from a z-table; or a t-value from a t-table for smaller samples).</li>
+        <li><strong>Multiply the critical value by the standard error</strong> to get your margin of error.</li>
+        <li><strong>Add and subtract the margin of error from your sample mean</strong> to get the lower and upper bounds of your interval.</li>
       </ol>
 
       <div class="example-box">
-        <p class="example-label">Worked example: 95% confidence interval</p>
-        <p>A sample of 25 students has a mean exam score of 75, with a sample standard deviation of 10. Find the 95% confidence interval for the true average score.</p>
-        <p>Standard error: SE = 10 / &radic;25 = 10 / 5 = 2</p>
-        <p>Degrees of freedom: n &minus; 1 = 24. The t-critical value for 95% confidence with 24 df is approximately 2.064.</p>
-        <p>Margin of error: 2.064 &times; 2 = 4.13</p>
-        <p>95% confidence interval: 75 &plusmn; 4.13 &rarr; (70.87, 79.13)</p>
-        <p>Interpretation: we're 95% confident the true average score for the full population falls between about 70.9 and 79.1.</p>
+        <p class="example-label">Worked example</p>
+        <p>A sample of 100 students has an average study time of 6 hours/week, with a standard deviation of 2 hours. Calculate a 95% confidence interval.</p>
+        <p>Standard error = 2 &divide; &radic;100 = 2 &divide; 10 = 0.2</p>
+        <p>Margin of error = 1.96 &times; 0.2 = 0.392</p>
+        <p>Confidence interval = 6 &plusmn; 0.392 = <strong>(5.61, 6.39)</strong></p>
       </div>
+
+      <h2>What the interval actually means</h2>
+      <p>A 95% confidence interval does NOT mean "there's a 95% chance the true population mean falls in this specific range." The correct interpretation is subtler: if you repeated this study many times and calculated a confidence interval each time, about 95% of those intervals would contain the true population mean. Any single interval either does or doesn't contain it &mdash; you just can't know which.</p>
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
-        <p><strong>Using z instead of t for small samples.</strong> The t-distribution accounts for the extra uncertainty that comes with a smaller sample. Most intro courses expect t unless you're specifically told the population standard deviation is known.</p>
+        <p><strong>Misinterpreting what "95% confidence" refers to.</strong> It describes the long-run reliability of the method, not the probability for this one specific interval.</p>
       </div>
       <div class="mistake-box">
-        <p><strong>Misinterpreting what "95% confidence" means.</strong> It describes the reliability of the method over repeated sampling, not a 95% chance that this specific interval contains the true value.</p>
+        <p><strong>Using the wrong critical value for small samples.</strong> With a small sample (roughly under 30) and an unknown population standard deviation, you should use a t-value from a t-table, not 1.96 &mdash; using 1.96 regardless of sample size is a common shortcut that's technically incorrect for small samples.</p>
       </div>
 
 
       <div class="cta-box">
-        <h3>Stuck on a stats problem right now?</h3>
+        <h3>Stuck on a statistics assignment right now?</h3>
         <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
         <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
       </div>
@@ -104,8 +107,8 @@
       <div class="related-links">
         <h3>Related reading</h3>
         <ul>
-        <li><a href="/blog/college-statistics-guide.html">The Complete College Statistics Survival Guide</a></li>
-        <li><a href="/blog/p-value-less-than-005-meaning.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/what-does-p-value-mean.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
         <li><a href="/blog/excel-for-college-statistics.html">How to Use Excel for College Statistics</a></li>
         </ul>
       </div>

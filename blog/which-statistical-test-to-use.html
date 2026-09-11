@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Which Statistical Test Should I Use? A Decision Guide | Study Hall Tutors</title>
-<meta name="description" content="Not sure whether to run a t-test, chi-square, or ANOVA? A step-by-step decision guide for choosing statistical tests based on your data and question.">
+<title>How to Know Which Statistical Test to Use | Study Hall Tutors</title>
+<meta name="description" content="A decision-tree method for choosing the right statistical test — t-test vs chi-square vs ANOVA — for your statistics homework or research project.">
 <link rel="canonical" href="https://studyhalltutors.com/blog/which-statistical-test-to-use.html">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
-<meta property="og:title" content="Which Statistical Test Should I Use? A Decision Guide | Study Hall Tutors">
-<meta property="og:description" content="Not sure whether to run a t-test, chi-square, or ANOVA? A step-by-step decision guide for choosing statistical tests based on your data and question.">
+<meta property="og:title" content="How to Know Which Statistical Test to Use | Study Hall Tutors">
+<meta property="og:description" content="A decision-tree method for choosing the right statistical test — t-test vs chi-square vs ANOVA — for your statistics homework or research project.">
 <meta property="og:url" content="https://studyhalltutors.com/blog/which-statistical-test-to-use.html">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Which Statistical Test Should I Use? A Decision Guide | Study Hall Tutors">
-<meta name="twitter:description" content="Not sure whether to run a t-test, chi-square, or ANOVA? A step-by-step decision guide for choosing statistical tests based on your data and question.">
+<meta name="twitter:title" content="How to Know Which Statistical Test to Use | Study Hall Tutors">
+<meta name="twitter:description" content="A decision-tree method for choosing the right statistical test — t-test vs chi-square vs ANOVA — for your statistics homework or research project.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
 
 <main id="top">
 
-  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
       <p class="kicker">College Statistics</p>
@@ -60,43 +60,46 @@
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>Choosing statistical tests is usually the actual hard part of a statistics assignment &mdash; once you know which test to run, the calculation (or the software) does most of the work. This kind of decision sits at the core of hypothesis testing: pick the wrong test and no amount of careful calculation afterward fixes it. Here's a statistical test decision tree that works for almost every intro-level question &mdash; the same process we walk through with students who come to us for statistics homework help.</p>
+      <p>"Which statistical test should I use?" is probably the single most common question in intro statistics &mdash; and the answer isn't about the numbers at all. It's about answering three questions about your data and your research question, in order, before you touch a formula. Getting this right is really the foundation of hypothesis testing: pick the wrong test and no amount of careful calculation afterward fixes it.</p>
 
-      <h2>Start with your question</h2>
-      <p>Before touching any formula, ask what you're actually trying to find out. Most intro stats questions fall into one of three buckets: comparing groups, testing a relationship between variables, or testing a single sample against a known value.</p>
+      <p>This statistical test decision tree walks through the three questions in order, so choosing statistical tests stops being a guessing game &mdash; the same process we use in statistics homework help sessions.</p>
 
-      <h2>Step 1: How many groups are you comparing?</h2>
+      <h2>The decision tree: 3 questions to ask first</h2>
+      <ol>
+        <li><strong>What type of data do you have?</strong> Categorical (yes/no, categories) or continuous (numbers on a scale, like height or test scores)?</li>
+        <li><strong>How many groups or variables are you comparing?</strong> One group against a known value, two groups, three or more groups, or the relationship between two continuous variables?</li>
+        <li><strong>Are your groups independent, or paired?</strong> Independent means different people/items in each group; paired means the same subjects measured twice (before/after).</li>
+      </ol>
+
+      <h2>Quick-reference: matching your answers to a test</h2>
       <ul>
-        <li><strong>One sample vs. a known value</strong> &mdash; one-sample t-test</li>
-        <li><strong>Two groups</strong> &mdash; independent samples t-test (different people in each group) or paired t-test (same people, measured twice)</li>
-        <li><strong>Three or more groups</strong> &mdash; ANOVA, not repeated t-tests (running multiple t-tests inflates your error rate)</li>
+        <li><strong>Comparing one group's average to a known value</strong> (continuous data) &rarr; one-sample t-test</li>
+        <li><strong>Comparing two independent groups' averages</strong> (continuous data) &rarr; independent-samples t-test</li>
+        <li><strong>Comparing the same group before and after</strong> (continuous data) &rarr; paired-samples t-test</li>
+        <li><strong>Comparing three or more groups' averages</strong> (continuous data) &rarr; ANOVA</li>
+        <li><strong>Testing a relationship between two categorical variables</strong> &rarr; chi-square test</li>
+        <li><strong>Testing a relationship between two continuous variables</strong> &rarr; correlation or regression</li>
       </ul>
 
-      <h2>Step 2: Is your data categorical or continuous?</h2>
-      <p>A t-test and ANOVA both compare continuous data (like scores, heights, or times) across groups. If instead you're comparing categories or proportions (like "pass/fail" or "yes/no" responses across groups), you need a <strong>chi-square test</strong> instead &mdash; this is one of the most common mix-ups in an intro course.</p>
-
-      <h2>Step 3: Are you testing a relationship, not a difference?</h2>
-      <p>If your question is about whether two continuous variables move together (like study hours and exam score), you're looking at <strong>correlation or regression</strong>, not a t-test or ANOVA at all.</p>
-
       <div class="example-box">
-        <p class="example-label">Quick reference: t-test vs chi-square vs ANOVA</p>
-        <p><strong>Comparing average test scores between 2 teaching methods?</strong> Independent samples t-test.</p>
-        <p><strong>Comparing average test scores across 4 teaching methods?</strong> ANOVA.</p>
-        <p><strong>Comparing pass/fail rates across 4 teaching methods?</strong> Chi-square test.</p>
-        <p><strong>Testing if study hours predict exam score?</strong> Regression.</p>
+        <p class="example-label">Worked example</p>
+        <p>A researcher wants to know if average exam scores differ across three teaching methods (lecture, flipped classroom, online).</p>
+        <p>Step 1: Data type? Exam scores are continuous.</p>
+        <p>Step 2: How many groups? Three teaching methods = three groups.</p>
+        <p>Step 3: Since three continuous-data groups are being compared, this calls for <strong>ANOVA</strong>, not a t-test.</p>
       </div>
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
-        <p><strong>ANOVA vs t-test: running multiple t-tests instead of one ANOVA.</strong> Comparing 4 groups with six separate t-tests inflates your chance of a false positive well beyond 5% &mdash; ANOVA exists specifically to handle this correctly.</p>
+        <p><strong>ANOVA vs t-test: running multiple t-tests instead of one ANOVA.</strong> Comparing three groups with three separate t-tests inflates your chance of a false positive (the multiple comparisons problem). If you have 3+ groups, that's an ANOVA question, not three t-test questions.</p>
       </div>
       <div class="mistake-box">
-        <p><strong>Using a t-test on categorical data.</strong> If your outcome is "which category," not "what number," you need chi-square, not a t-test or ANOVA.</p>
+        <p><strong>Using a t-test on categorical data.</strong> If your outcome is "yes/no" or a category rather than a number, you likely need a chi-square test, not a t-test &mdash; check your data type first, every time.</p>
       </div>
 
 
       <div class="cta-box">
-        <h3>Stuck on a stats problem right now?</h3>
+        <h3>Stuck on a statistics assignment right now?</h3>
         <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
         <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
       </div>
@@ -106,8 +109,8 @@
       <div class="related-links">
         <h3>Related reading</h3>
         <ul>
-        <li><a href="/blog/college-statistics-guide.html">The Complete College Statistics Survival Guide</a></li>
-        <li><a href="/blog/p-value-less-than-005-meaning.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
+        <li><a href="/blog/college-statistics-guide.html">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/what-does-p-value-mean.html">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
         <li><a href="/blog/how-to-interpret-regression-results.html">How to Interpret Regression Results</a></li>
         </ul>
       </div>
