@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://studyhalltutors.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://studyhalltutors.com/math.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/science.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/english.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/history.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/coding.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/statistics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studyhalltutors.com/accounting.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/math</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/science</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/english</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/history</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/coding</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/statistics</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://studyhalltutors.com/accounting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://studyhalltutors.com/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/college-calculus-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-find-a-derivative.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/related-rates-problems.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/u-substitution-integrals.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/lhopitals-rule.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/study-for-calculus-final.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/college-statistics-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/which-statistical-test-to-use.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/p-value-less-than-005-meaning.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-calculate-confidence-interval.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-interpret-regression-results.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/excel-for-college-statistics.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/college-science-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-solve-stoichiometry-problems.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-find-limiting-reactant.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-calculate-molarity.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-study-for-biology-exam.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studyhalltutors.com/blog/how-to-write-biology-lab-report.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/college-calculus-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-find-a-derivative</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/related-rates-problems</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/u-substitution-integrals</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/lhopitals-rule</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/study-for-calculus-final</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/college-statistics-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/which-statistical-test-to-use</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/p-value-less-than-005-meaning</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-calculate-confidence-interval</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-interpret-regression-results</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/excel-for-college-statistics</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/college-science-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-solve-stoichiometry-problems</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-find-limiting-reactant</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-calculate-molarity</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-study-for-biology-exam</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://studyhalltutors.com/blog/how-to-write-biology-lab-report</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How to Use Excel for College Statistics: A Beginner's Guide | Study Hall Tutors</title>
-<meta name="description" content="A beginner's guide to Excel statistical analysis: key formulas, how to calculate standard deviation in Excel, and running a t-test using the Data Analysis ToolPak.">
-<link rel="canonical" href="https://studyhalltutors.com/blog/excel-for-college-statistics.html">
+<meta name="description" content="A beginner's guide to doing statistics in Excel — descriptive stats, standard deviation, and running a t-test with the Data Analysis ToolPak.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/excel-for-college-statistics">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
 <meta property="og:title" content="How to Use Excel for College Statistics: A Beginner's Guide | Study Hall Tutors">
-<meta property="og:description" content="A beginner's guide to Excel statistical analysis: key formulas, how to calculate standard deviation in Excel, and running a t-test using the Data Analysis ToolPak.">
-<meta property="og:url" content="https://studyhalltutors.com/blog/excel-for-college-statistics.html">
+<meta property="og:description" content="A beginner's guide to doing statistics in Excel — descriptive stats, standard deviation, and running a t-test with the Data Analysis ToolPak.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/excel-for-college-statistics">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Use Excel for College Statistics: A Beginner's Guide | Study Hall Tutors">
-<meta name="twitter:description" content="A beginner's guide to Excel statistical analysis: key formulas, how to calculate standard deviation in Excel, and running a t-test using the Data Analysis ToolPak.">
+<meta name="twitter:description" content="A beginner's guide to doing statistics in Excel — descriptive stats, standard deviation, and running a t-test with the Data Analysis ToolPak.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
       <a href="/#how">How it works</a>
       <a href="/#stories">Stories</a>
       <a href="/blog/">Blog</a>
-      <a class="nav-cta" href="/statistics.html#quote">Get a quote</a>
+      <a class="nav-cta" href="/statistics#quote">Get a quote</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -49,58 +49,59 @@
 
 <main id="top">
 
-  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
       <p class="kicker">College Statistics</p>
-      <h1>How to Use Excel for College Statistics: A Beginner's Guide</h1>
+      <h1>How to Use Excel for College Statistics</h1>
       <p class="article-meta">Part of the College Statistics Survival Guide</p>
     </div>
   </section>
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>Most intro college statistics courses expect you to actually run these tests in software, not by hand &mdash; and Excel is usually the first tool students learn it in. Doing statistics in Excel doesn't require anything fancy: here's what you need for a typical college statistics assignment, the same ground we cover in Excel homework help sessions, from a blank spreadsheet to a working statistical analysis.</p>
+      <p>Most intro statistics courses expect you to run your analysis in software, and Excel is often the first one students touch. The good news: you only need a handful of functions and one add-in to cover most intro-level assignments.</p>
 
-      <h2>Getting your data into Excel correctly</h2>
-      <p>Put each variable in its own column, with a clear header in row 1, and each observation (each student, each trial) in its own row. Almost every function and tool in Excel assumes this layout &mdash; getting it wrong here causes problems in every step after.</p>
+      <h2>Step 1: Turn on the Data Analysis ToolPak</h2>
+      <p>This free add-in isn't on by default. In Excel: File &rarr; Options &rarr; Add-ins &rarr; at the bottom, select "Excel Add-ins" and click Go &rarr; check "Analysis ToolPak" &rarr; OK. You'll now see a "Data Analysis" button under the Data tab.</p>
 
-      <h2>Key built-in functions</h2>
+      <h2>The functions you'll use constantly</h2>
       <ul>
         <li><strong>=AVERAGE(range)</strong> &mdash; the mean</li>
-        <li><strong>=STDEV.S(range)</strong> &mdash; sample standard deviation (use this one for a sample, which is almost always what you have in coursework)</li>
-        <li><strong>=STDEV.P(range)</strong> &mdash; population standard deviation (only if you truly have the entire population, not a sample)</li>
-        <li><strong>=VAR.S(range)</strong> &mdash; sample variance</li>
-        <li><strong>=COUNT(range)</strong> &mdash; sample size (n)</li>
+        <li><strong>=MEDIAN(range)</strong> &mdash; the median</li>
+        <li><strong>=STDEV.S(range)</strong> &mdash; standard deviation for a <em>sample</em> (use this one for homework unless told otherwise)</li>
+        <li><strong>=STDEV.P(range)</strong> &mdash; standard deviation for an entire <em>population</em> (less common in homework)</li>
+        <li><strong>=COUNT(range)</strong> &mdash; sample size</li>
       </ul>
 
-      <h2>Turning on the Data Analysis ToolPak</h2>
-      <p>For anything beyond basic descriptive statistics &mdash; t-tests, ANOVA, regression &mdash; you need Excel's Data Analysis ToolPak, which isn't turned on by default. Go to File &rarr; Options &rarr; Add-ins, then at the bottom select "Excel Add-ins" and click Go. Check the box for "Analysis ToolPak" and click OK. You'll now see a "Data Analysis" button under the Data tab.</p>
-
-      <h2>Running a t-test in Excel</h2>
-      <p>Click Data &rarr; Data Analysis &rarr; choose the appropriate t-Test option (paired, or two-sample assuming equal/unequal variances depending on your data), select your two data ranges, and Excel outputs the t-statistic and p-value directly &mdash; no manual formula needed.</p>
+      <h2>Running a t-test with the ToolPak</h2>
+      <ol>
+        <li>Enter your two groups' data in two columns.</li>
+        <li>Go to Data &rarr; Data Analysis &rarr; choose the appropriate t-test option (paired, or two-sample assuming equal/unequal variances, depending on your design).</li>
+        <li>Select your two data ranges when prompted.</li>
+        <li>Excel outputs a table including the t-statistic and the p-value (look for "P(T&lt;=t) two-tail" for a standard two-tailed test).</li>
+      </ol>
 
       <div class="example-box">
-        <p class="example-label">Worked example: standard deviation in Excel</p>
-        <p>You have exam scores in cells A2 through A26 (25 students).</p>
-        <p>To find the mean: =AVERAGE(A2:A26)</p>
-        <p>To find the sample standard deviation: =STDEV.S(A2:A26)</p>
-        <p>These two numbers are usually the starting point for almost every other calculation in an intro stats assignment &mdash; confidence intervals, t-tests, and more all build on them.</p>
+        <p class="example-label">Worked example</p>
+        <p>Column A has 20 quiz scores from Class 1, Column B has 20 quiz scores from Class 2. To compare the two class averages:</p>
+        <p>Data &rarr; Data Analysis &rarr; t-Test: Two-Sample Assuming Unequal Variances &rarr; select A1:A20 and B1:B20 &rarr; OK.</p>
+        <p>Excel returns a table with both means, the t-statistic, and the p-value &mdash; if "P(T&lt;=t) two-tail" is below 0.05, the difference between the classes is statistically significant.</p>
       </div>
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
-        <p><strong>Using STDEV.P instead of STDEV.S.</strong> Coursework almost always deals with a sample, not a full population &mdash; using the population version understates your true uncertainty.</p>
+        <p><strong>Using STDEV.P instead of STDEV.S.</strong> For a sample (almost always the case in homework), use STDEV.S &mdash; STDEV.P assumes you have data for the entire population, which is rare.</p>
       </div>
       <div class="mistake-box">
-        <p><strong>Forgetting to enable the Data Analysis ToolPak.</strong> Without it, t-tests, ANOVA, and regression tools simply won't appear under the Data tab, which is the most common reason students get stuck before they've even started.</p>
+        <p><strong>Not seeing the "Data Analysis" button and assuming Excel doesn't have it.</strong> It's just not enabled by default &mdash; go back to Step 1 rather than trying to calculate everything manually with formulas.</p>
       </div>
 
 
       <div class="cta-box">
-        <h3>Stuck on a stats problem right now?</h3>
+        <h3>Stuck on a statistics assignment right now?</h3>
         <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
-        <a class="btn btn-primary" href="/statistics.html#quote">Get a free quote</a>
+        <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
       </div>
 
 
@@ -108,9 +109,9 @@
       <div class="related-links">
         <h3>Related reading</h3>
         <ul>
-        <li><a href="/blog/college-statistics-guide.html">The Complete College Statistics Survival Guide</a></li>
-        <li><a href="/blog/how-to-calculate-confidence-interval.html">How to Calculate a Confidence Interval Step by Step</a></li>
-        <li><a href="/blog/how-to-interpret-regression-results.html">How to Interpret Regression Results</a></li>
+        <li><a href="/blog/college-statistics-guide">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/how-to-calculate-confidence-interval">How to Calculate a Confidence Interval Step by Step</a></li>
+        <li><a href="/blog/how-to-interpret-regression-results">How to Interpret Regression Results</a></li>
         </ul>
       </div>
 
@@ -125,7 +126,7 @@
     <p class="footer-links">
       <a href="/#subjects">Subjects</a>
       <a href="/blog/">Blog</a>
-      <a href="/statistics.html#quote">Get a quote</a>
+      <a href="/statistics#quote">Get a quote</a>
       <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
     </p>
   </div>
