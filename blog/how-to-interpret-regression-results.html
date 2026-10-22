@@ -1,202 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Interpret Linear Regression Results for College Statistics | Study Hall Tutors</title>
-    <meta name="description" content="Learn how to interpret linear regression output, coefficients, R-squared, and p-values step-by-step with real output examples from SPSS, Excel, and R.">
-    <link rel="canonical" href="https://studyhalltutors.com/blog/how-to-interpret-linear-regression-results">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #1a365d;
-        }
-        .breadcrumbs {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .breadcrumbs a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        .key-takeaways {
-            background-color: #f8fafc;
-            border-left: 4px solid #2563eb;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .key-takeaways h3 {
-            margin-top: 0;
-            color: #1e293b;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #cbd5e1;
-            padding: 10px 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f1f5f9;
-            color: #1e293b;
-        }
-        .cta-box {
-            background-color: #eff6ff;
-            border: 1px solid #bfdbfe;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-            text-align: center;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #2563eb;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .cta-button:hover {
-            background-color: #1d4ed8;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors</title>
+<meta name="description" content="How to read and interpret regression output — coefficients, p-values, and R² — from SPSS, R, or Excel for your statistics assignment.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/how-to-interpret-regression-results">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors">
+<meta property="og:description" content="How to read and interpret regression output — coefficients, p-values, and R² — from SPSS, R, or Excel for your statistics assignment.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/how-to-interpret-regression-results">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Interpret Regression Results for a College Statistics Assignment | Study Hall Tutors">
+<meta name="twitter:description" content="How to read and interpret regression output — coefficients, p-values, and R² — from SPSS, R, or Excel for your statistics assignment.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-    <div class="breadcrumbs">
-        <a href="/">Home</a> / <a href="/blog">Blog</a> / <a href="/blog/college-statistics">College Statistics</a> / How to Interpret Linear Regression Results
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/statistics#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--ink)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Statistics</p>
+      <p class="kicker">College Statistics</p>
+      <h1>How to Interpret Regression Results</h1>
+      <p class="article-meta">Part of the College Statistics Survival Guide</p>
     </div>
+  </section>
 
-    <h1>How to Interpret Linear Regression Results for College Statistics</h1>
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Regression analysis interpretation looks intimidating mostly because the output is dense &mdash; a table full of numbers where only three or four actually matter for a typical homework assignment. Once you know which numbers to look at and in what order, reading the output gets much faster. This is the same breakdown we use in statistics assignment help sessions.</p>
 
-    <div class="key-takeaways">
-        <h3>Key Takeaways at a Glance</h3>
+      <h2>The 4 numbers that matter most</h2>
+      <ol>
+        <li><strong>The coefficient</strong> &mdash; how much the outcome variable changes for a one-unit increase in the predictor, holding other variables constant.</li>
+        <li><strong>The p-value for that coefficient</strong> &mdash; whether that predictor's relationship with the outcome is statistically significant.</li>
+        <li><strong>R&sup2; (R-squared)</strong> &mdash; the percentage of variation in the outcome that your model explains, from 0 to 1 (or 0% to 100%).</li>
+        <li><strong>The sign of the coefficient</strong> &mdash; positive means the outcome increases as the predictor increases; negative means it decreases.</li>
+      </ol>
+
+      <h2>Step-by-step: reading a regression table</h2>
+      <ol>
+        <li><strong>Start with R&sup2;</strong> to get a sense of how well the overall model fits &mdash; a low R&sup2; means the predictors explain relatively little of the variation.</li>
+        <li><strong>Check the p-value for each coefficient</strong> to see which predictors have a statistically significant relationship with the outcome (typically p &lt; 0.05).</li>
+        <li><strong>Look at the coefficient's sign and size</strong> for each significant predictor to describe the actual relationship in plain language.</li>
+        <li><strong>Write the interpretation as a sentence</strong>, not just a number &mdash; this is usually what an assignment is actually asking for.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A regression predicting exam score from hours studied gives: coefficient = 2.5, p-value = 0.01, R&sup2; = 0.34</p>
+        <p>Interpretation: Each additional hour studied is associated with a 2.5-point increase in exam score, on average (coefficient = 2.5). This relationship is statistically significant (p = 0.01, which is less than 0.05). The model explains 34% of the variation in exam scores (R&sup2; = 0.34) &mdash; meaning other factors besides study hours also matter.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Treating a significant coefficient as proof of causation.</strong> Regression shows association, not causation &mdash; "hours studied predicts exam score" doesn't prove studying causes the improvement, especially without a controlled experiment.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Ignoring a low R&sup2; while reporting a significant p-value.</strong> A predictor can be statistically significant while the overall model still explains very little of the outcome &mdash; report both numbers, not just the one that looks good.</p>
+      </div>
+
+
+      <div class="cta-box">
+        <h3>Stuck on a statistics assignment right now?</h3>
+        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
+      </div>
+
+
+
+      <div class="related-links">
+        <h3>Related reading</h3>
         <ul>
-            <li><strong>The Slope (b₁ / Coefficient):</strong> Tells you how much Y (dependent variable) changes for every 1-unit increase in X (independent variable).</li>
-            <li><strong>R² (R-Squared):</strong> The proportion of variance in Y explained by your regression model (0 to 100%).</li>
-            <li><strong>p-value (Significance):</strong> Tests if the relationship is statistically significant. If p &lt; 0.05, reject the null hypothesis and conclude that X is a significant predictor of Y.</li>
+        <li><a href="/blog/college-statistics-guide">The College Statistics Survival Guide</a></li>
+        <li><a href="/blog/which-statistical-test-to-use">How to Know Which Statistical Test to Use</a></li>
+        <li><a href="/blog/excel-for-college-statistics">How to Use Excel for College Statistics</a></li>
         </ul>
+      </div>
+
     </div>
+  </section>
 
-    <p>Linear regression is one of the most frequently tested concepts in introductory and intermediate college statistics courses. Whether your professor requires output from <strong>SPSS</strong>, <strong>R</strong>, <strong>Excel</strong>, or <strong>Stata</strong>, the core challenge is almost always the same: <strong>translating a grid of raw numbers into clear, plain-English statements.</strong></p>
+</main>
 
-    <p>In this guide, we break down the 4 key numbers in any linear regression table, show you how to construct the regression line equation, and walk through a complete real-world example step-by-step—the exact same way our tutors explain it in 1-on-1 sessions.</p>
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/statistics#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
 
-    <h2>The Simple Linear Regression Equation</h2>
-    <p>Simple linear regression models the relationship between one quantitative independent variable (X, the predictor) and one quantitative dependent variable (Y, the outcome):</p>
-    <p><code>Ŷ = b₀ + b₁X</code></p>
-    <ul>
-        <li><strong>Ŷ (Y-hat):</strong> The predicted value of the outcome variable.</li>
-        <li><strong>b₀ (Intercept / Constant):</strong> The predicted value of Y when X = 0.</li>
-        <li><strong>b₁ (Slope / Coefficient):</strong> The estimated change in Y for every 1-unit increase in X.</li>
-    </ul>
-
-    <h2>The 4 Numbers That Matter Most in Regression Output</h2>
-    <p>When you run a regression model in statistical software like SPSS, Excel, or R, you will receive several tables. Focus on these four core metrics:</p>
-
-    <h3>1. The Coefficient (b₁)</h3>
-    <p>The regression coefficient for your predictor variable tells you the <strong>direction and strength</strong> of the linear relationship.</p>
-    <ul>
-        <li><strong>Interpretation template:</strong> <em>"For every 1-unit increase in [X], [Y] is predicted to increase/decrease by [b₁] units, holding all other variables constant."</em></li>
-    </ul>
-
-    <h3>2. R² (Coefficient of Determination)</h3>
-    <p>Located in the Model Summary table, R² measures model fit, ranging from 0 to 1 (or 0% to 100%).</p>
-    <ul>
-        <li><strong>Interpretation template:</strong> <em>"[R² × 100]% of the variation in [Y] is explained by the linear relationship with [X]."</em></li>
-    </ul>
-
-    <h3>3. The p-value (p or Sig.)</h3>
-    <p>Tests the null hypothesis that the slope coefficient equals zero (H₀: β₁ = 0).</p>
-    <ul>
-        <li><strong>If p &lt; 0.05:</strong> The predictor is statistically significant.</li>
-        <li><strong>If p ≥ 0.05:</strong> Insufficient evidence to conclude a significant linear relationship exists.</li>
-    </ul>
-
-    <h3>4. The Intercept (b₀)</h3>
-    <p>The constant term represents the baseline value of Y when X equals zero.</p>
-
-    <h2>Step-by-Step Worked Example</h2>
-    <p>A researcher wants to predict student exam scores (Y) based on weekly study hours (X).</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Model Term</th>
-                <th>Unstandardized Coefficient (b)</th>
-                <th>Std. Error</th>
-                <th>t-statistic</th>
-                <th>p-value (Sig.)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>(Constant / Intercept)</strong></td>
-                <td>52.40</td>
-                <td>3.12</td>
-                <td>16.79</td>
-                <td>&lt; .001</td>
-            </tr>
-            <tr>
-                <td><strong>Study Hours (X)</strong></td>
-                <td>3.85</td>
-                <td>0.45</td>
-                <td>8.55</td>
-                <td>&lt; .001</td>
-            </tr>
-        </tbody>
-    </table>
-    <p><strong>Model Summary:</strong> R² = 0.642 (64.2%)</p>
-
-    <h3>Step 1: Write the Regression Line Equation</h3>
-    <p><code>Exam Score = 52.40 + 3.85 × (Study Hours)</code></p>
-
-    <h3>Step 2: Interpret the Slope Coefficient</h3>
-    <blockquote><em>"For each additional hour a student studies per week, their exam score is predicted to increase by 3.85 points."</em></blockquote>
-
-    <h3>Step 3: Interpret R²</h3>
-    <blockquote><em>"Approximately 64.2% of the variance in exam scores can be explained by the number of hours spent studying per week."</em></blockquote>
-
-    <h3>Step 4: Evaluate Statistical Significance</h3>
-    <blockquote><em>"There is a statistically significant positive linear relationship between study hours and exam performance (p &lt; .001)."</em></blockquote>
-
-    <h2>Common Mistakes That Lose Exam Points</h2>
-    <ol>
-        <li><strong>Confusing Correlation (r) with Regression (R²):</strong> Correlation measures association strength; regression predicts outcome values and variance explained.</li>
-        <li><strong>Misinterpreting Causation:</strong> Regression proves <em>association</em>, not direct causality.</li>
-        <li><strong>Extrapolation:</strong> Don't predict values far outside your dataset's range.</li>
-        <li><strong>Ignoring Assumptions:</strong> Ensure linearity, independence, homoscedasticity, and normality of residuals.</li>
-    </ol>
-
-    <h2>Frequently Asked Questions</h2>
-    <h3>What is the difference between simple and multiple linear regression?</h3>
-    <p>Simple linear regression uses one independent variable (X), while multiple regression uses two or more predictors (X₁, X₂, ...).</p>
-
-    <h3>What should I do if my p-value is greater than 0.05?</h3>
-    <p>The predictor is not statistically significant in your model; you fail to reject the null hypothesis.</p>
-
-    <h3>Do Study Hall Tutors help with statistics software like SPSS, R, or Excel?</h3>
-    <p>Yes! Our tutors walk you through your exact dataset, software output, and assignment prompts step-by-step.</p>
-
-    <div class="cta-box">
-        <h3>Need Help With Your Statistics Coursework?</h3>
-        <p>Get matched with a 1-on-1 tutor who explains hypothesis testing, linear regression, ANOVA, and software output clearly.</p>
-        <a href="/statistics" class="cta-button">Get a Quote for Statistics Tutoring</a>
-    </div>
-
+<script src="/script.js"></script>
 </body>
 </html>
