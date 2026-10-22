@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital Budgeting: NPV, IRR and Payback Period | Study Hall Tutors</title>
+<meta name="description" content="Capital budgeting techniques explained: net present value, internal rate of return, payback period and profitability index, with a full worked example.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/capital-budgeting-npv-irr-payback">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="Capital Budgeting: NPV, IRR and Payback Period | Study Hall Tutors">
+<meta property="og:description" content="Capital budgeting techniques explained: net present value, internal rate of return, payback period and profitability index, with a full worked example.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/capital-budgeting-npv-irr-payback">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Capital Budgeting: NPV, IRR and Payback Period | Study Hall Tutors">
+<meta name="twitter:description" content="Capital budgeting techniques explained: net present value, internal rate of return, payback period and profitability index, with a full worked example.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/accounting#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--brown)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Accounting</p>
+      <p class="kicker">College Accounting</p>
+      <h1>Capital Budgeting: NPV, IRR and Payback Period</h1>
+      <p class="article-meta">Part of the College Accounting Survival Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Capital budgeting is how a company decides whether a long-term investment (new equipment, a new product line, a new facility) is worth the money. The capital budgeting techniques your course covers are all versions of the same question: does this project return more than it costs, once you account for the time value of money? That is project appraisal, or investment appraisal, depending on your textbook.</p>
+
+      <h2>The time value of money in one sentence</h2>
+      <p>A dollar today is worth more than a dollar a year from now, because today’s dollar can be invested. So future cash flows have to be discounted back to today’s value, at the return the company requires, before they can be compared with the upfront cost.</p>
+
+      <h2>The four main capital budgeting methods</h2>
+      <ul>
+        <li><strong>Payback period</strong> = initial investment ÷ annual cash inflow (for even cash flows). It measures how long it takes to recover the investment. It ignores the time value of money and any cash after payback. A discounted payback period fixes the first problem by using discounted cash flows.</li>
+        <li><strong>Net present value (NPV)</strong> = present value of all future cash inflows − initial investment. Accept the project if NPV is above zero.</li>
+        <li><strong>Internal rate of return (IRR)</strong> = the discount rate that makes NPV exactly zero. Accept the project if the IRR is above the required rate of return.</li>
+        <li><strong>Profitability index</strong> = present value of future cash flows ÷ initial investment. Accept the project if it’s above 1.</li>
+      </ul>
+      <p>Some courses also cover the accounting rate of return (ARR), which uses accounting profit instead of cash flow and ignores the time value of money.</p>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>A project costs $10,000 and returns $4,000 a year for three years. The required return is 10%.</p>
+        <p><strong>Payback:</strong> 10,000 ÷ 4,000 = 2.5 years</p>
+        <p><strong>Present values:</strong> Year 1: 4,000 ÷ 1.10 = 3,636.36. Year 2: 4,000 ÷ 1.21 = 3,305.79. Year 3: 4,000 ÷ 1.331 = 3,005.26. Total = 9,947.41.</p>
+        <p><strong>NPV</strong> = 9,947.41 − 10,000 = <strong>−52.59</strong></p>
+        <p><strong>Profitability index</strong> = 9,947.41 ÷ 10,000 = <strong>0.99</strong></p>
+        <p><strong>IRR</strong> is about <strong>9.7%</strong>, just under the 10% required return.</p>
+        <p>NPV, the profitability index, and IRR all agree: reject the project, narrowly. Notice that a 2.5-year payback might look fine on its own, which is why payback shouldn’t be the only test.</p>
+      </div>
+
+      <h2>A tip for doing it in Excel</h2>
+      <p>The NPV function in Excel discounts the first value in the range by one full period, as if it arrives at the end of Year 1. So don’t include the initial investment in the range. Subtract it separately: <strong>=NPV(10%, 4000, 4000, 4000) − 10000</strong>. For IRR, put the initial investment in as a negative number in the first cell and use <strong>=IRR(range)</strong>.</p>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Including the initial investment inside Excel’s NPV function.</strong> It treats that cash outflow as happening in Year 1 and discounts it, which understates the cost.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Relying on payback alone.</strong> It ignores both the time value of money and everything after the payback point.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Mixing up the decision rules.</strong> Accept if NPV is above zero, IRR is above the required return, or the profitability index is above 1. They should point the same way for a single project.</p>
+      </div>
+
+      <div class="cta-box">
+        <h3>Stuck on an accounting assignment right now?</h3>
+        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/accounting#quote">Get a free quote</a>
+      </div>
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/college-accounting-guide">The College Accounting Survival Guide</a></li>
+        <li><a href="/blog/financial-ratio-analysis">Financial Ratio Analysis: Formulas and How to Interpret Them</a></li>
+        <li><a href="/blog/how-to-prepare-basic-financial-statements">How to Prepare the Basic Financial Statements</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/accounting#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
