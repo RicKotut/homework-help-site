@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One-Way and Two-Way ANOVA, Step by Step | Study Hall Tutors</title>
+<meta name="description" content="How to run and read a one-way ANOVA: the null and alternate hypotheses, a worked example with the F statistic, and a short guide to two-way ANOVA.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/one-way-anova-step-by-step">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="One-Way and Two-Way ANOVA, Step by Step | Study Hall Tutors">
+<meta property="og:description" content="How to run and read a one-way ANOVA: the null and alternate hypotheses, a worked example with the F statistic, and a short guide to two-way ANOVA.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/one-way-anova-step-by-step">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="One-Way and Two-Way ANOVA, Step by Step | Study Hall Tutors">
+<meta name="twitter:description" content="How to run and read a one-way ANOVA: the null and alternate hypotheses, a worked example with the F statistic, and a short guide to two-way ANOVA.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/statistics#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Statistics Methods &amp; Software</p>
+      <p class="kicker">Statistics Methods &amp; Software</p>
+      <h1>One-Way and Two-Way ANOVA, Step by Step</h1>
+      <p class="article-meta">Part of the Statistics Software and Methods Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Use a one-way ANOVA (analysis of variance) when you want to compare the means of three or more independent groups on one measured outcome. It exists because running several t-tests instead inflates your chance of a false positive. The calculation looks long, but it is the same few steps every time.</p>
+
+      <h2>The hypotheses</h2>
+      <p>The null hypothesis says all the group means are equal. The alternate hypothesis says at least one group mean is different. It does not say that all of them differ, and that distinction matters when you write your conclusion.</p>
+
+      <h2>Step-by-step method</h2>
+      <ol>
+        <li><strong>State the null and alternate hypotheses</strong> and choose your alpha value, usually 0.05.</li>
+        <li><strong>Check the assumptions:</strong> independent observations, roughly normal data within each group, and similar spread across groups.</li>
+        <li><strong>Find each group mean and the grand mean,</strong> which is the mean of all observations together.</li>
+        <li><strong>Sum of squares between groups</strong> = Σ n × (group mean − grand mean)². <strong>Sum of squares within groups</strong> = Σ (each value − its own group mean)².</li>
+        <li><strong>Degrees of freedom:</strong> between = k − 1 (k is the number of groups), within = N − k (N is the total number of observations). Each mean square is its sum of squares ÷ its degrees of freedom.</li>
+        <li><strong>F = mean square between ÷ mean square within.</strong></li>
+        <li><strong>Decide.</strong> If the p-value is below alpha (or F exceeds the critical value), reject the null hypothesis.</li>
+        <li><strong>If it’s significant, run a post hoc test</strong> such as Tukey’s to see which groups differ.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Worked example</p>
+        <p>Exam scores for three teaching methods, five students each. A: 78, 82, 80, 85, 75. B: 84, 88, 86, 90, 82. C: 70, 74, 72, 76, 68.</p>
+        <p>Group means: A = 80, B = 86, C = 72. Grand mean = 79.33.</p>
+        <p>Between: 5 × [(80 − 79.33)² + (86 − 79.33)² + (72 − 79.33)²] = <strong>493.33</strong>, with 2 degrees of freedom, so the mean square is 246.67.</p>
+        <p>Within: 58 + 40 + 40 = <strong>138</strong>, with 12 degrees of freedom, so the mean square is 11.5.</p>
+        <p>F = 246.67 ÷ 11.5 = <strong>21.45</strong>. The critical value of F(2, 12) at 0.05 is 3.89, and the p-value is about 0.0001. Reject the null hypothesis.</p>
+        <p>Tukey comparisons: A vs B differ by 6 (p = 0.04), A vs C by 8 (p = 0.007), and B vs C by 14 (p &lt; 0.001). Every pair differs at the 0.05 level.</p>
+        <p><strong>Write-up:</strong> average exam scores differed across teaching methods, F(2, 12) = 21.45, p &lt; .001.</p>
+      </div>
+
+      <h2>Two-way ANOVA</h2>
+      <p>A two-way ANOVA has two factors, for example teaching method and class time (morning or evening). It tests three things: the main effect of the first factor, the main effect of the second, and the interaction, which asks whether the effect of one factor depends on the other. Read the interaction first. If it’s significant, the main effects can mislead, because the story differs from one condition to the next. Software does the arithmetic, so your job is choosing the factors correctly and interpreting each F and p-value.</p>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Concluding that all the groups differ.</strong> A significant ANOVA only tells you at least one mean is different. Use a post hoc test to find out which.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Stopping at the F statistic.</strong> Report the degrees of freedom and the p-value too, in the form F(2, 12) = 21.45, p &lt; .001.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Using a one-way ANOVA on the same people measured several times.</strong> Repeated measurements on the same participants need a repeated-measures design.</p>
+      </div>
+
+      <p style="font-size:0.9rem; color:var(--ink-soft); margin-top:2em;">If you want ANOVA homework help on your own data, a tutor can work through the sums of squares with you, or through the software output, until you can explain every number.</p>
+
+      <div class="cta-box">
+        <h3>Stuck on a statistics assignment right now?</h3>
+        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
+      </div>
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/statistics-software-and-methods-guide">The Statistics Software and Methods Guide</a></li>
+        <li><a href="/blog/which-statistical-test-to-use">How to Know Which Statistical Test to Use</a></li>
+        <li><a href="/blog/p-value-less-than-005-meaning">What Does a P-Value Less Than 0.05 Actually Mean?</a></li>
+        <li><a href="/blog/spss-help-statistics">SPSS Help: Running and Interpreting Common Tests</a></li>
+        <li><a href="/blog/minitab-help-statistics">Minitab Help: Running and Reading the Output</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/statistics#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

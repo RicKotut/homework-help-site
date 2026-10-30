@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPSS Help: Running and Interpreting Common Tests | Study Hall Tutors</title>
+<meta name="description" content="SPSS statistics help for college students: the menu paths for common tests, how to read the output tables, and the mistakes that cost points.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/spss-help-statistics">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="SPSS Help: Running and Interpreting Common Tests | Study Hall Tutors">
+<meta property="og:description" content="SPSS statistics help for college students: the menu paths for common tests, how to read the output tables, and the mistakes that cost points.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/spss-help-statistics">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SPSS Help: Running and Interpreting Common Tests | Study Hall Tutors">
+<meta name="twitter:description" content="SPSS statistics help for college students: the menu paths for common tests, how to read the output tables, and the mistakes that cost points.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/statistics#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Statistics Methods &amp; Software</p>
+      <p class="kicker">Statistics Methods &amp; Software</p>
+      <h1>SPSS Help: Running and Interpreting Common Tests</h1>
+      <p class="article-meta">Part of the Statistics Software and Methods Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>SPSS statistics help usually starts with the same complaint: you know which test you need, but SPSS has dozens of menus and an output window that prints every table at once. Once you know how the program is organized and which table to read, a statistical analysis in SPSS takes a few minutes.</p>
+
+      <h2>How SPSS is organized</h2>
+      <ul>
+        <li><strong>Data View</strong> is the spreadsheet. Each row is a case (a person, a trial) and each column is a variable.</li>
+        <li><strong>Variable View</strong> is where each variable is defined: its type, its labels, and its level of measurement (Nominal, Ordinal, or Scale).</li>
+        <li><strong>The Output Viewer</strong> shows the results. Everything you run is added to it.</li>
+      </ul>
+      <p>Many wrong answers start in Variable View, with a group variable marked Scale instead of Nominal, or missing values coded as real numbers.</p>
+
+      <h2>Menu paths for common tests</h2>
+      <ul>
+        <li>Descriptive statistics: <strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong> or <strong>Descriptives</strong></li>
+        <li>Independent-samples t-test: <strong>Analyze &gt; Compare Means &gt; Independent-Samples T Test</strong></li>
+        <li>One-way ANOVA: <strong>Analyze &gt; Compare Means &gt; One-Way ANOVA</strong> (add Tukey under Post Hoc)</li>
+        <li>Chi-square: <strong>Analyze &gt; Descriptive Statistics &gt; Crosstabs</strong>, then Statistics &gt; Chi-square</li>
+        <li>Correlation: <strong>Analyze &gt; Correlate &gt; Bivariate</strong></li>
+        <li>Linear regression: <strong>Analyze &gt; Regression &gt; Linear</strong></li>
+      </ul>
+
+      <h2>Step-by-step: running a test</h2>
+      <ol>
+        <li><strong>Set up your variables in Variable View.</strong> Code groups as numbers with value labels (for example 1 = Method A, 2 = Method B).</li>
+        <li><strong>Scan Data View</strong> for typos and missing values.</li>
+        <li><strong>Open the right test from the menu.</strong></li>
+        <li><strong>Move variables into the correct boxes:</strong> the measured outcome goes in the test variable box, and the group variable in the grouping box. For a t-test, click Define Groups and enter the codes.</li>
+        <li><strong>Click OK and find the right table</strong> in the Output Viewer.</li>
+      </ol>
+
+      <div class="example-box">
+        <p class="example-label">Reading an independent-samples t-test</p>
+        <p>Two groups of 10. Group Statistics shows means of 76.5 and 70.9.</p>
+        <p>In the Independent Samples Test table, Levene’s Test shows Sig. = .539. That is above .05, so assume equal variances and read the <strong>Equal variances assumed</strong> row.</p>
+        <p>That row gives t = 4.436, df = 18, Sig. (2-tailed) = .000, and a mean difference of 5.6.</p>
+        <p><strong>Write-up:</strong> the groups differed significantly, t(18) = 4.44, p &lt; .001, with means of 76.5 and 70.9.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Reading the wrong row.</strong> Check Levene’s test first, then read the “Equal variances assumed” row or the “Equal variances not assumed” row, whichever applies.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Reporting .000 as p = 0.</strong> SPSS rounds to three decimals. Write p &lt; .001.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Wrong measurement level in Variable View.</strong> Check that nominal variables are marked Nominal, because it changes which options SPSS offers.</p>
+      </div>
+
+      <p style="font-size:0.9rem; color:var(--ink-soft); margin-top:2em;">If your SPSS statistics homework asks for a written interpretation, or you want SPSS data analysis help on a regression, a tutor can walk through your actual output with you.</p>
+
+      <p style="font-size:0.85rem; color:var(--ink-soft); margin-top:2em;">Study Hall Tutors is an independent tutoring service and is not affiliated with IBM. Product names are used only to describe what students are working on.</p>
+
+      <div class="cta-box">
+        <h3>Stuck on a statistics assignment right now?</h3>
+        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
+      </div>
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/statistics-software-and-methods-guide">The Statistics Software and Methods Guide</a></li>
+        <li><a href="/blog/one-way-anova-step-by-step">One-Way and Two-Way ANOVA, Step by Step</a></li>
+        <li><a href="/blog/how-to-interpret-regression-results">How to Interpret Regression Results</a></li>
+        <li><a href="/blog/which-statistical-test-to-use">How to Know Which Statistical Test to Use</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/statistics#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

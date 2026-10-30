@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minitab Help: Running and Reading the Output | Study Hall Tutors</title>
+<meta name="description" content="Minitab help for statistics homework: the menu paths, how to read the Session window output, and why a p-value of 0.000 isn’t zero.">
+<link rel="canonical" href="https://studyhalltutors.com/blog/minitab-help-statistics">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Study Hall Tutors">
+<meta property="og:title" content="Minitab Help: Running and Reading the Output | Study Hall Tutors">
+<meta property="og:description" content="Minitab help for statistics homework: the menu paths, how to read the Session window output, and why a p-value of 0.000 isn’t zero.">
+<meta property="og:url" content="https://studyhalltutors.com/blog/minitab-help-statistics">
+<meta property="og:image" content="https://studyhalltutors.com/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Minitab Help: Running and Reading the Output | Study Hall Tutors">
+<meta name="twitter:description" content="Minitab help for statistics homework: the menu paths, how to read the Session window output, and why a p-value of 0.000 isn’t zero.">
+<meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      Study Hall Tutors
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/#subjects">Subjects</a>
+      <a href="/#how">How it works</a>
+      <a href="/#stories">Stories</a>
+      <a href="/blog/">Blog</a>
+      <a class="nav-cta" href="/statistics#quote">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap article-hero" style="--accent: var(--indigo)">
+    <div>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Statistics Methods &amp; Software</p>
+      <p class="kicker">Statistics Methods &amp; Software</p>
+      <h1>Minitab Help: Running and Reading the Output</h1>
+      <p class="article-meta">Part of the Statistics Software and Methods Guide</p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="wrap article-body-inner">
+      <p>Minitab is built so you can run a test in a few clicks, which makes the output the hard part. Good Minitab interpretation depends on knowing what the Session window is showing and which numbers belong in your answer.</p>
+
+      <h2>How Minitab is organized</h2>
+      <ul>
+        <li><strong>The Worksheet</strong> holds your data in columns.</li>
+        <li><strong>The Session window</strong> shows the text output of every analysis you run.</li>
+        <li><strong>Graphs</strong> open in their own windows.</li>
+        <li><strong>The Stat, Graph, and Assistant menus</strong> are where you work. The Assistant menu walks you through the choices and produces a report card, which helps when you aren’t sure which test to use.</li>
+      </ul>
+
+      <h2>Menu paths for common tests</h2>
+      <ul>
+        <li>Descriptive statistics: <strong>Stat &gt; Basic Statistics &gt; Display Descriptive Statistics</strong></li>
+        <li>Two-sample t-test: <strong>Stat &gt; Basic Statistics &gt; 2-Sample t</strong></li>
+        <li>One-way ANOVA: <strong>Stat &gt; ANOVA &gt; One-Way</strong></li>
+        <li>Correlation: <strong>Stat &gt; Basic Statistics &gt; Correlation</strong></li>
+        <li>Regression: <strong>Stat &gt; Regression &gt; Regression &gt; Fit Regression Model</strong></li>
+        <li>Chi-square: <strong>Stat &gt; Tables &gt; Chi-Square Test for Association</strong></li>
+      </ul>
+
+      <h2>The data layout trap</h2>
+      <p>Minitab asks whether your data are stacked (all values in one column, with a second column of group labels) or in separate columns, one per group. Choose the option that matches your worksheet. A mismatch is the most common reason a test fails to run, or runs on the wrong data.</p>
+
+      <h2>Reading a one-way ANOVA in the Session window</h2>
+      <p>The output opens with the null hypothesis (all means are equal), the alternate hypothesis (at least one mean is different), and the significance level. Then comes the Analysis of Variance table, with the columns Source, DF, Adj SS, Adj MS, F-Value, and P-Value. After it, the Model Summary shows S and R-sq, and a table of means with grouping letters.</p>
+
+      <div class="example-box">
+        <p class="example-label">Example: the ANOVA from our worked guide</p>
+        <p>Factor: DF 2, Adj SS 493.3, Adj MS 246.7. Error: DF 12, Adj SS 138.0, Adj MS 11.5. Total: DF 14.</p>
+        <p>F-Value = <strong>21.45</strong>, P-Value = <strong>0.000</strong>.</p>
+        <p>Minitab shows 0.000 when the p-value is below 0.0005. It doesn’t mean zero, so write <strong>p &lt; 0.001</strong>.</p>
+        <p><strong>Write-up:</strong> the group means differ significantly, F(2, 12) = 21.45, p &lt; 0.001. See the full calculation in our <a href="/blog/one-way-anova-step-by-step">ANOVA guide</a>.</p>
+      </div>
+
+      <h2>Common mistakes</h2>
+      <div class="mistake-box">
+        <p><strong>Reporting P = 0.000.</strong> A probability of exactly zero isn’t possible here. Report p &lt; 0.001.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Choosing the wrong data layout.</strong> Check whether your columns are stacked or separate before you run anything.</p>
+      </div>
+      <div class="mistake-box">
+        <p><strong>Reading only the graph.</strong> The interval plot helps you see the pattern, but your answer should come from the table of numbers.</p>
+      </div>
+
+      <p style="font-size:0.9rem; color:var(--ink-soft); margin-top:2em;">For Minitab homework help on a specific analysis, bring your worksheet and Session window output, and a tutor can go through what each section means and what to report as statistical analysis.</p>
+
+      <p style="font-size:0.85rem; color:var(--ink-soft); margin-top:2em;">Study Hall Tutors is an independent tutoring service and is not affiliated with Minitab, LLC. Product names are used only to describe what students are working on.</p>
+
+      <div class="cta-box">
+        <h3>Stuck on a statistics assignment right now?</h3>
+        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
+      </div>
+
+      <div class="related-links">
+        <h3>Related reading</h3>
+        <ul>
+        <li><a href="/blog/statistics-software-and-methods-guide">The Statistics Software and Methods Guide</a></li>
+        <li><a href="/blog/one-way-anova-step-by-step">One-Way and Two-Way ANOVA, Step by Step</a></li>
+        <li><a href="/blog/spss-help-statistics">SPSS Help: Running and Interpreting Common Tests</a></li>
+        <li><a href="/blog/how-to-interpret-regression-results">How to Interpret Regression Results</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Study Hall Tutors &mdash; built for students, by people who remember being one.</p>
+    <p class="footer-links">
+      <a href="/#subjects">Subjects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/statistics#quote">Get a quote</a>
+      <a href="https://www.facebook.com/StudyHallTutorsUS/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
