@@ -151,7 +151,7 @@ if (quoteForm && quoteResponse) {
 // ---------- Floating "Chat on WhatsApp" button (appears on every page) ----------
 // Uses OWNER_WHATSAPP_NUMBER above, so changing that one line updates the button everywhere.
 (function addWhatsAppButton() {
-  var message = encodeURIComponent("Hi, I’m interested in tutoring help from Study Hall Tutors.");
+  var message = encodeURIComponent("Hi, I need help with homework, an assignment, coursework, or exam prep from Study Hall Tutors.");
   var link = document.createElement('a');
   link.className = 'whatsapp-float';
   link.href = 'https://wa.me/' + OWNER_WHATSAPP_NUMBER + '?text=' + message;
