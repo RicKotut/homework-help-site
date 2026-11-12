@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors</title>
-<meta name="description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<title>When to Use L’Hôpital’s Rule | Worked 0/0 Example | Study Hall Tutors</title>
+<meta name="description" content="Learn when L’Hôpital’s Rule applies: first confirm the limit is 0/0 or ∞/∞. Then differentiate the numerator and denominator separately, with a worked example.">
 <link rel="canonical" href="https://studyhalltutors.com/blog/lhopitals-rule">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9998;</text></svg>">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Study Hall Tutors">
-<meta property="og:title" content="L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors">
-<meta property="og:description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<meta property="og:title" content="When to Use L’Hôpital’s Rule | Worked 0/0 Example | Study Hall Tutors">
+<meta property="og:description" content="Learn when L’Hôpital’s Rule applies: first confirm the limit is 0/0 or ∞/∞. Then differentiate the numerator and denominator separately, with a worked example.">
 <meta property="og:url" content="https://studyhalltutors.com/blog/lhopitals-rule">
 <meta property="og:image" content="https://studyhalltutors.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="L'Hopital's Rule: When (and When Not) to Use It | Study Hall Tutors">
-<meta name="twitter:description" content="How to recognize indeterminate forms, apply L'Hopital's Rule step by step, and avoid the most common mistake: using it when it doesn't actually apply.">
+<meta name="twitter:title" content="When to Use L’Hôpital’s Rule | Worked 0/0 Example | Study Hall Tutors">
+<meta name="twitter:description" content="Learn when L’Hôpital’s Rule applies: first confirm the limit is 0/0 or ∞/∞. Then differentiate the numerator and denominator separately, with a worked example.">
 <meta name="twitter:image" content="https://studyhalltutors.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,30 +53,30 @@
     <div>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / College Math & Calculus</p>
       <p class="kicker">College Math & Calculus</p>
-      <h1>L'Hopital's Rule: When (and When Not) to Use It</h1>
+      <h1>When to Use L’Hôpital’s Rule (and When It Doesn’t Apply)</h1>
       <p class="article-meta">Part of the College Calculus Survival Guide</p>
     </div>
   </section>
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>L'Hopital's Rule feels like a magic shortcut once you learn it &mdash; which is exactly why it gets misused. It only works on a specific type of limit, and applying it when it doesn't apply is one of the most common point-losing mistakes on a calculus exam.</p>
+      <p>L’Hôpital’s Rule helps evaluate certain limits, but only after direct substitution produces 0/0 or ∞/∞. Check the form first; for either of these indeterminate forms, differentiate the numerator and denominator separately, then evaluate the new limit.</p>
 
-      <h2>When it actually applies</h2>
-      <p>L'Hopital's Rule only applies to limits that are in an <strong>indeterminate form</strong> &mdash; specifically 0/0 or &infin;/&infin;. If you plug in the limit value and get a real number (even 0 divided by a nonzero number), you don't need L'Hopital's Rule &mdash; you already have your answer.</p>
+      <h2>When L’Hôpital’s Rule applies</h2>
+      <p>L’Hôpital’s Rule applies when a limit has the <strong>indeterminate form</strong> 0/0 or ∞/∞. If direct substitution gives a real number, including 0 divided by a nonzero number, evaluate the limit directly; the rule is not needed.</p>
 
       <h2>The step-by-step method</h2>
       <ol>
-        <li><strong>Plug in the limit value first</strong> to confirm you actually get 0/0 or &infin;/&infin;. This step is not optional.</li>
+        <li><strong>Plug in the limit value first</strong> to confirm you get 0/0 or ∞/∞. This step is essential.</li>
         <li><strong>Take the derivative of the numerator and denominator separately</strong> &mdash; not the derivative of the whole fraction using the quotient rule.</li>
-        <li><strong>Evaluate the new limit.</strong> If it resolves to a number, you're done.</li>
-        <li><strong>If it's still indeterminate, apply the rule again</strong> on the new fraction, and repeat until it resolves.</li>
+        <li><strong>Evaluate the new limit.</strong> If it resolves to a number, you’re done.</li>
+        <li><strong>If it’s still indeterminate, apply the rule again</strong> on the new fraction, and repeat until it resolves.</li>
       </ol>
 
       <div class="example-box">
         <p class="example-label">Worked example</p>
         <p>Evaluate the limit as x &rarr; 0 of (sin x) / x</p>
-        <p>Plugging in x = 0 gives 0/0 &mdash; an indeterminate form, so L'Hopital's Rule applies.</p>
+        <p>Plugging in x = 0 gives 0/0 &mdash; an indeterminate form, so L’Hôpital’s Rule applies.</p>
         <p>Differentiate top and bottom separately: derivative of sin x is cos x; derivative of x is 1.</p>
         <p>New limit: cos(0) / 1 = 1</p>
         <p>So the original limit equals 1.</p>
@@ -84,16 +84,16 @@
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
-        <p><strong>Applying it to a limit that isn't actually indeterminate.</strong> If plugging in gives something like 5/0 (not 0/0), the limit is infinite or doesn't exist &mdash; L'Hopital's Rule doesn't apply and using it will give a wrong answer.</p>
+        <p><strong>Applying it to a limit that is not indeterminate.</strong> If plugging in gives something like 5/0 (not 0/0), the limit may be infinite or may not exist &mdash; L’Hôpital’s Rule does not apply.</p>
       </div>
       <div class="mistake-box">
-        <p><strong>Using the quotient rule instead of differentiating top and bottom separately.</strong> L'Hopital's Rule is NOT the quotient rule &mdash; you take the derivative of the numerator and denominator independently, not the derivative of the fraction as a whole.</p>
+        <p><strong>Using the quotient rule instead of differentiating top and bottom separately.</strong> L’Hôpital’s Rule is not the quotient rule &mdash; differentiate the numerator and denominator independently, not the fraction as a whole.</p>
       </div>
 
 
       <div class="cta-box">
         <h3>Stuck on a calculus problem right now?</h3>
-        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
         <a class="btn btn-primary" href="/math#quote">Get a free quote</a>
       </div>
 
@@ -104,7 +104,7 @@
         <ul>
         <li><a href="/blog/college-calculus-guide">The Complete College Calculus Survival Guide</a></li>
         <li><a href="/blog/how-to-find-a-derivative">How to Find a Derivative: A Step-by-Step Method</a></li>
-        <li><a href="/blog/u-substitution-integrals">U-Substitution in Integrals: When and How to Use It</a></li>
+        <li><a href="/blog/u-substitution-integrals">U-Substitution in Integration: When to Use It and Worked Steps</a></li>
         </ul>
       </div>
 
