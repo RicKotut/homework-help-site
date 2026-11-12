@@ -60,10 +60,11 @@
 
   <section class="article-body">
     <div class="wrap article-body-inner">
-      <p>Use u-substitution when an integral contains a composite function and the remaining factor matches, or is a constant multiple of, its derivative. It is the integration counterpart of the chain rule and a common technique in college calculus.</p>
+      <p>Use u-substitution when an integral contains a composite function and the remaining factor matches, or is a constant multiple of, its derivative. The key is to check that the substitution accounts for the whole integrand, including the differential. This guide walks through that check, a case where a constant must be factored out, and a definite integral where the bounds change.</p>
 
       <h2>How to know when to use u-substitution</h2>
       <p>Look for a function inside another function, multiplied by its derivative or a constant multiple. For example, in 2x cos(x²), the inner function is x² and its derivative, 2x, is also present.</p>
+      <p>A useful test is to temporarily name the inner expression u and differentiate it. If the remaining factor can become du after a simple constant adjustment, substitution is promising. If a substantial x-expression remains that cannot be rewritten in terms of u, a different method may be needed.</p>
 
       <h2>U-substitution integration steps</h2>
       <ol>
@@ -82,6 +83,25 @@
         <p>Substituting back: sin(x&sup2;) + C</p>
       </div>
 
+      <h2>When the derivative differs by a constant</h2>
+      <p>The derivative does not have to appear exactly as written; a constant multiple can be factored out. For example, evaluate &int; x(x&sup2; + 1)&sup3; dx.</p>
+      <ol>
+        <li>Let u = x&sup2; + 1, so du = 2x dx and x dx = du/2.</li>
+        <li>Rewrite the integral as (1/2)&int; u&sup3; du.</li>
+        <li>Integrate: (1/2)(u&sup4;/4) + C = u&sup4;/8 + C.</li>
+        <li>Substitute back: (x&sup2; + 1)&sup4;/8 + C.</li>
+      </ol>
+      <p>Differentiate the result to check it: the chain rule gives (1/8) · 4(x&sup2; + 1)&sup3; · 2x = x(x&sup2; + 1)&sup3;, the original integrand.</p>
+
+      <h2>Definite integrals: change the bounds too</h2>
+      <p>For a definite integral, either convert both bounds to u-values and finish in u, or return to x before using the original bounds. Do not mix the two approaches.</p>
+      <div class="example-box">
+        <p class="example-label">Worked definite integral</p>
+        <p>Evaluate &int; from 0 to 1 of 2x cos(x&sup2;) dx. Set u = x&sup2;, so du = 2x dx. Convert the bounds: when x = 0, u = 0; when x = 1, u = 1.</p>
+        <p>The integral becomes &int; from 0 to 1 of cos(u) du = sin(1) - sin(0) = sin(1) ≈ 0.8415.</p>
+        <p>Because the bounds were changed to u-values, do not substitute x back into this final evaluation.</p>
+      </div>
+
       <h2>Common u-substitution mistakes</h2>
       <div class="mistake-box">
         <p><strong>Forgetting to substitute dx.</strong> Every part of the original integral needs to be rewritten in terms of u, including dx &mdash; not just the obvious “inside function” piece.</p>
@@ -93,7 +113,7 @@
 
       <div class="cta-box">
         <h3>Stuck on a calculus problem right now?</h3>
-        <p>Tell us what you’re working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <p>Share the calculus assignment or integral you’re stuck on. Get step-by-step homework help that shows the substitution and why it works; the quote is free.</p>
         <a class="btn btn-primary" href="/math#quote">Get a free quote</a>
       </div>
 

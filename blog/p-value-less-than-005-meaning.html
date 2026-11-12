@@ -63,10 +63,10 @@
       <p>"p &lt; 0.05" is one of the most repeated phrases in any intro statistics course, and also one of the most commonly misunderstood. Getting p-value interpretation right matters more than memorizing the cutoff &mdash; here's p-value explained the way we'd walk through it in a statistics homework help session, without the textbook jargon.</p>
 
       <h2>What a p-value actually measures</h2>
-      <p>A p-value is the probability of seeing a result at least as extreme as what you observed, <em>if the null hypothesis were true</em>. It's a statement about how surprising your data would be under "nothing is going on" &mdash; not a statement about whether something is going on.</p>
+      <p>A p-value is the probability, assuming the null hypothesis and the test’s other assumptions are true, of getting a result at least as extreme as the one observed. “As extreme” is defined by the statistical test and whether it is one-sided or two-sided. A p-value describes how the data compare with that model; it is not the probability that the null hypothesis is true.</p>
 
       <h2>Why 0.05 is the cutoff (and why it's somewhat arbitrary)</h2>
-      <p>A p-value below 0.05 means there's less than a 5% chance of seeing data this extreme if the null hypothesis were actually true &mdash; unlikely enough that most fields have agreed to treat it as evidence against the null hypothesis. But 0.05 isn't a law of nature; it's a widely-adopted convention, which is why some fields use stricter cutoffs.</p>
+      <p>If a test uses a significance level α = 0.05, a p-value below 0.05 meets that preselected decision threshold. The threshold is a convention chosen before evaluating results, not a universal boundary between “true” and “false.” Other studies may use a different α based on their field and the consequences of errors.</p>
 
       <h2>What a small p-value does NOT mean</h2>
       <ul>
@@ -78,9 +78,21 @@
       <div class="example-box">
         <p class="example-label">Worked example</p>
         <p>A study compares exam scores between students who used a new study app and those who didn't, and finds a p-value of 0.03 for the difference in average scores.</p>
-        <p>Interpretation: if the app truly had no effect, there would only be a 3% chance of seeing a score difference this large just from random variation. Since 0.03 &lt; 0.05, this is typically reported as a statistically significant result.</p>
-        <p>What it doesn't tell you: how large the score improvement actually was, or whether it's large enough to matter practically &mdash; that requires looking at the effect size separately.</p>
+        <p>Interpretation: if the app truly had no effect and the test assumptions hold, the probability of results at least this extreme under the null model is 0.03. If the study selected α = 0.05 in advance, it would reject the null hypothesis under that rule.</p>
+        <p>What it does not tell you: the probability that the app works, the size of the score difference, or whether any difference matters in practice. To assess those, report the estimated difference and an appropriate confidence interval or effect size alongside the test result.</p>
       </div>
+
+      <h2>A practical way to interpret a test result</h2>
+      <ol>
+        <li><strong>State the hypotheses.</strong> Identify the null claim and the alternative being tested, in the context of the assignment or research question.</li>
+        <li><strong>Check the test and assumptions.</strong> Confirm that the chosen test, its direction (one- or two-sided), and its assumptions fit the data and question.</li>
+        <li><strong>Compare p with the preselected α.</strong> If p is below α, describe the result as statistically significant under that decision rule; otherwise, say the evidence was not sufficient to reject the null.</li>
+        <li><strong>Describe the size and uncertainty.</strong> Include the estimated effect and a confidence interval where appropriate. Statistical significance alone does not show practical importance.</li>
+      </ol>
+      <p>For example, report the test statistic, degrees of freedom when relevant, exact p-value (unless it is smaller than the software can display), effect estimate, and interval according to your course’s required style. Avoid writing “p = 0.000”; software rounding does not mean the probability is literally zero.</p>
+
+      <h2>Why p-values near 0.05 need careful wording</h2>
+      <p>A result of p = 0.049 and one of p = 0.051 are nearly the same amount of evidence under their respective null models, even though they fall on different sides of α = 0.05. Report the actual value and the estimate; avoid treating the cutoff as proof that one effect is real and the other is absent.</p>
 
       <h2>Common mistakes</h2>
       <div class="mistake-box">
@@ -93,7 +105,7 @@
 
       <div class="cta-box">
         <h3>Stuck on a stats problem right now?</h3>
-        <p>Tell us what you're working on and get matched with a tutor who explains the reasoning, not just the answer &mdash; free quote by email or WhatsApp.</p>
+        <p>Share the statistics assignment or results you’re interpreting. Get step-by-step help with hypothesis tests and statistical reasoning; the quote is free.</p>
         <a class="btn btn-primary" href="/statistics#quote">Get a free quote</a>
       </div>
 
